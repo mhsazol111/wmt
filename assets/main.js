@@ -54,26 +54,26 @@
     });
 
     // Landing Page Video Background
-    if ($('.landing-video-bg').length) {
-      var options = {
-        muted: true,
-        loop: true,
-        autoplay: true,
-        position: '50% 50%',
-        posterType: 'jpg',
-        resizing: true,
-        className: 'video-player-wrap',
-      };
-      $('.landing-video-bg').vide(
-        {
-          mp4: amz.theme_url + '/assets/videos/landing-video-bg.mp4',
-          // webm: path/to/video2,
-          // ogv: path/to/video3,
-          poster: amz.theme_url + '/assets/images/home-bg.jpg',
-        },
-        options
-      );
-    }
+    // if ($('.landing-video-bg').length) {
+    //   var options = {
+    //     muted: true,
+    //     loop: true,
+    //     autoplay: true,
+    //     position: '50% 50%',
+    //     posterType: 'jpg',
+    //     resizing: true,
+    //     className: 'video-player-wrap',
+    //   };
+    //   $('.landing-video-bg').vide(
+    //     {
+    //       mp4: amz.theme_url + '/assets/videos/landing-video-bg.mp4',
+    //       // webm: path/to/video2,
+    //       // ogv: path/to/video3,
+    //       poster: amz.theme_url + '/assets/images/home-bg.jpg',
+    //     },
+    //     options
+    //   );
+    // }
 
     $('#amz-gallery-slider').owlCarousel({
       items: 1,

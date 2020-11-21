@@ -37,8 +37,8 @@ function amz_enqueue_theme_scripts() {
 
     $version = '1.0.0'; //time();
 
-    wp_enqueue_style( 'address-gautreaux', '//use.typekit.net/nhw4vnu.css', null, '1.0', 'all' );
-    wp_enqueue_style( 'address-sans', '//use.typekit.net/wsy0wvw.css', null, '1.0', 'all' );
+    // wp_enqueue_style( 'address-gautreaux', '//use.typekit.net/nhw4vnu.css', null, '1.0', 'all' );
+    // wp_enqueue_style( 'address-sans', '//use.typekit.net/wsy0wvw.css', null, '1.0', 'all' );
 
     wp_enqueue_style( 'child-style',
         get_stylesheet_uri(), '', $version

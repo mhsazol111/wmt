@@ -284,6 +284,7 @@ class HomePage extends React.Component {
           onVideoMuteToggle={this.handleVideoMuteToggle}
           onVideoMute={this.handleVideoMute}
           onVideoUnmute={this.handleVideoUnmute}
+          insideLogo={true}
         />
 
         <div id="main-content">

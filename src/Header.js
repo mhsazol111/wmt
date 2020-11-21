@@ -24,6 +24,7 @@ class Header extends React.Component {
       onVideoMuteToggle,
       onVideoMute,
       onVideoUnmute,
+      insideLogo,
     } = this.props;
 
     return (
@@ -31,7 +32,14 @@ class Header extends React.Component {
         <div className="container">
           <div className="row">
             <div className="column-4">
-              {hasBgAudio ? (
+              {insideLogo ?  (
+                <div className="wmt-inside-logo">
+                  <img src={themeUrl + '/assets/images/inside-logo.svg'} alt="Inside Logo" />
+                </div>
+              ) : (
+                ''
+              )}
+              {/*{hasBgAudio ? (
                 <React.Fragment>
                   <div className="header-sound-toggle">
                     <p className="font-address text-uppercase">
@@ -52,13 +60,13 @@ class Header extends React.Component {
                     <source src={themeUrl + '/assets/audios/bg-audio.mp3'} type="audio/mpeg" />
                     {/* <source src="audios/creativeminds.ogg" type="audio/ogg" />
                     <source src="audios/creativeminds.wav" type="audio/wav" /> */}
-                  </audio>
+                  {/*</audio>
                 </React.Fragment>
               ) : (
                 ''
-              )}
+              )} */}
 
-              {hasHeaderSound ? (
+              {/* {hasHeaderSound ? (
                 <React.Fragment>
                   <div className="header-sound-toggle fade-in">
                     <p className="font-address text-uppercase">
@@ -78,21 +86,21 @@ class Header extends React.Component {
                 </React.Fragment>
               ) : (
                 ''
-              )}
+              )}  */}
             </div>
             <div className="column-4">
-              <div className="amazon-original font-ember text-uppercase text-center text-light">Amazon original movie</div>
             </div>
             <div className="column-4">
-              <div className="premiere-date-wrap display-flex">
-                {premiereFinished ? (
+              <div className="premiere-date-wrap">
+                <p>In theaters & on demand<br/> <strong>December 11</strong></p>
+                {/* {premiereFinished ? (
                   <a href="#" className="amz-watch-prime text-uppercase text-light">
                     <span>Watch Now</span>
                   </a>
                 ) : (
                   <p className="premiere-date text-light text-uppercase">December 25</p>
                 )}
-                <img src={themeUrl + '/assets/images/prime-video.svg'} alt="Prime Video" />
+                <img src={themeUrl + '/assets/images/prime-video.svg'} alt="Prime Video" /> */}
               </div>
             </div>
           </div>

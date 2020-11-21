@@ -149,6 +149,9 @@ class LoginPage extends React.Component {
         className={this.state.isGateClose ? 'landing-video-bg gate-is-open-now' : 'landing-video-bg'}
         style={{ width: '100%', minHeight: '100vh' }}
       >
+        <div className="amz-bg">
+          <div className="amz-bg-layer-image" style={{ backgroundImage: `url(${themeUrl}/assets/images/landing-bg.jpg)` }}></div>
+        </div>
         <Header
           hasBgAudio={true}
           toggleAudio={this.handlePlayToggle}
@@ -158,10 +161,46 @@ class LoginPage extends React.Component {
         />
 
         <div id="main-content">
-          <div className="top-info-section">
+
+          <div className="wmt-premiere-wrap">
             <div className="container">
-              <div className="inner-info-texts text-center">
-                <img src={themeUrl + '/assets/images/Sylvieslove-logo.svg'} alt="Sylvie's love" />
+              <div className="row">
+                <div className="column-12">
+
+                  <div className="coast-area">
+                    {!isGateClose ? (
+                      <div className="remaining-timer" id="east-cost">
+                        <div className="wmt-premiere-label">
+                          <p>Premiere starts in</p>
+                        </div>
+                        <div className="east-coast-time">
+                          <Countdown timeTillDate={this.state.firstShow} timeFormat="YYYY-MM-DD H:m:s" />
+                        </div>
+                        <div className="wmt-coast-label">
+                          <p>East Coast</p>
+                        </div>
+                      </div>
+                    ) : (
+                      ''
+                    )}
+                    {!isGateClose ? (
+                      <div className="remaining-timer" id="west-cost">
+                        <div className="west-coast-time">
+                          <Countdown timeTillDate={this.state.secondShow} timeFormat="YYYY-MM-DD H:m:s" />
+                        </div>
+                        <div style={{ display: 'none' }}>
+                          <Countdown timeTillDate={this.state.eventDate} timeFormat="YYYY-MM-DD H:m:s" onFinished={this.timerCompleted} />
+                        </div>
+                        <div className="wmt-coast-label">
+                          <p>West Coast</p>
+                        </div>
+                      </div>
+                    ) : (
+                      ''
+                    )}
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -169,46 +208,14 @@ class LoginPage extends React.Component {
           <div className="amz-center-section">
             <div className="container">
               <div className="row">
-                <div className="column-6">
-                  <div className="coast-area">
-                    {!isGateClose ? (
-                      <div className="remaining-timer text-center text-light text-uppercase" id="east-cost">
-                        <div className="east-coast">
-                          <h3 className="coast-title font-gautreaux">East Coast</h3>
-                          <p className="start-in font-address special-screening">Special screening</p>
-                          <div className="coast-times">
-                            <p className="start-in font-address">starts in</p>
-                            <div className="east-coast-time font-address">
-                              <Countdown timeTillDate={this.state.firstShow} timeFormat="YYYY-MM-DD H:m:s" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      ''
-                    )}
-                    {!isGateClose ? (
-                      <div className="remaining-timer text-center text-light text-uppercase" id="east-cost">
-                        <div className="west-coast">
-                          <h3 className="coast-title font-gautreaux">West Coast</h3>
-                          <p className="start-in font-address special-screening">Special screening</p>
-                          <div className="coast-times">
-                            <p className="start-in font-address">starts in</p>
-                            <div className="west-coast-time font-address">
-                              <Countdown timeTillDate={this.state.secondShow} timeFormat="YYYY-MM-DD H:m:s" />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ display: 'none' }}>
-                          <Countdown timeTillDate={this.state.eventDate} timeFormat="YYYY-MM-DD H:m:s" onFinished={this.timerCompleted} />
-                        </div>
-                      </div>
-                    ) : (
-                      ''
-                    )}
+
+                <div className="column-4"></div>
+                <div className="column-4">
+                  <div className="main-logo-wrap">
+                    <img src={themeUrl + '/assets/images/main-logo.svg'} alt="Wild Mountain Thyme" />
                   </div>
                 </div>
-                <div className="column-6">
+                <div className="column-4">
                   {isGateOpen && !isGateClose ? (
                     <PasswordForm
                       loginHandler={this.loginHandler}
@@ -222,6 +229,7 @@ class LoginPage extends React.Component {
                     <GateContent isClosed={isGateOpen} />
                   )}
                 </div>
+
               </div>
             </div>
           </div>

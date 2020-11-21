@@ -28,8 +28,8 @@ class LeftNav extends Component {
               </a>
             </li>
             <li>
-              <a href="/styling" id="styling" className={currentPage === 'styling' ? 'active' : ''} onClick={handleClick}>
-                Styling
+              <a href="/bios" id="bios" className={currentPage === 'bios' ? 'active' : ''} onClick={handleClick}>
+                Bios
               </a>
             </li>
           </ul>
