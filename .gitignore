@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+assets/videos/
+assets/audios/
+build/
+dist/
+.vscode/
