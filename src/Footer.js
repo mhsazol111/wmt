@@ -21,19 +21,19 @@ class Footer extends Component {
               </div>
             </div>
             <div className="column-4">
-              {this.props.hasLogo ? (
+              {/* {this.props.hasLogo ? ( */}
                 <React.Fragment>
                   <div className="hash-tag-logo1">
-                    <img className="bs" src={themeUrl + '/assets/images/b-streat.png'} alt="b street" />
-                    <img className="ams" src={themeUrl + '/assets/images/amasia.png'} alt="amasia" />
-                    <img className="mar" src={themeUrl + '/assets/images/mar-pic.png'} alt="mar pic" />
-                    <img className="ls" src={themeUrl + '/assets/images/ls-logo.png'} alt="LS" />
-                    <img className="por" src={themeUrl + '/assets/images/por-pic.png'} alt="Por" />
+                    <div className="bs"><img className="" src={themeUrl + '/assets/images/b-streat.png'} alt="b street" /></div>
+                    <div className="ams"><img className="" src={themeUrl + '/assets/images/amasia.png'} alt="amasia" /></div>
+                    <div className="mar"><img className="" src={themeUrl + '/assets/images/mar-pic.png'} alt="mar pic" /></div>
+                    <div className="ls"><img className="" src={themeUrl + '/assets/images/ls-logo-m.png'} alt="LS" /></div>
+                    <div className="por"><img className="" src={themeUrl + '/assets/images/por-pic.png'} alt="Por" /></div>
                   </div>
                 </React.Fragment>
-              ) : (
+              {/* ) : (
                 ''
-              )}
+              )} */}
             </div>
 
           </div>

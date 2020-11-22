@@ -20,7 +20,7 @@ import PreScreen from './parts/preScreen';
 import Footer from './Footer';
 import Gallery from './Gallery';
 import Trailer from './Trailer';
-import Styling from './Styling';
+import Bios from './Bios';
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -251,15 +251,15 @@ class HomePage extends React.Component {
       optionalComponents = <Gallery />;
     } else if (currentPage === 'trailer') {
       optionalComponents = <Trailer />;
-    } else if (currentPage === 'styling') {
-      optionalComponents = <Styling />;
+    } else if (currentPage === 'bios') {
+      optionalComponents = <Bios />;
     }
 
     let bgUrl = 'theater-bg.jpg';
     if (this.state.currentPage === 'gallery') {
       bgUrl = 'gallery-bg.jpg';
-    } else if (this.state.currentPage === 'styling') {
-      bgUrl = 'styling-bg.jpg';
+    } else if (this.state.currentPage === 'bios') {
+      bgUrl = 'bios-bg.jpg';
     }
 
     return (
@@ -289,12 +289,12 @@ class HomePage extends React.Component {
 
         <div id="main-content">
           <div className="container">
-            <div className="row">
+            {/* <div className="row">
               <div className="inner-page-logo">
                 <img src={themeUrl + '/assets/images/Sylvieslove-logo.svg'} alt="Sylvie's Love" />
               </div>
-            </div>
-            <div className="row">
+            </div> */}
+            <div className="row align-center">
               <div className={this.state.isGateClosed ? 'amz-left-panel premiere-finished' : 'amz-left-panel'}>
                 <LeftNav handleClick={this.handlePageChange} currentPage={currentPage} isGateClosed={this.state.isGateClosed} />
               </div>

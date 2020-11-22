@@ -177,7 +177,7 @@ class LoginPage extends React.Component {
                           <Countdown timeTillDate={this.state.firstShow} timeFormat="YYYY-MM-DD H:m:s" />
                         </div>
                         <div className="wmt-coast-label">
-                          <p>East Coast</p>
+                          <p>{amzData.first_timer_label}</p>
                         </div>
                       </div>
                     ) : (
@@ -192,7 +192,7 @@ class LoginPage extends React.Component {
                           <Countdown timeTillDate={this.state.eventDate} timeFormat="YYYY-MM-DD H:m:s" onFinished={this.timerCompleted} />
                         </div>
                         <div className="wmt-coast-label">
-                          <p>West Coast</p>
+                          <p>{amzData.second_timer_label}</p>
                         </div>
                       </div>
                     ) : (

@@ -54,6 +54,9 @@ function amz_enqueue_theme_scripts() {
     $second_movie_start_time = strtotime( $app_settings->field('second_movie_start_time') );
     $gate_close = strtotime( $app_settings->field('gate_close') );
     $video_id = $app_settings->field('video_id');
+    $first_timer_label = $app_settings->field('first_timer_label');
+    $second_timer_label = $app_settings->field('second_timer_label');
+    $prescreen_timer_label = $app_settings->field('prescreen_timer_label');
     wp_localize_script( 'amz-front', 'amzData', array(
         'site_url'  => get_site_url(),
         'theme_url' => get_stylesheet_directory_uri(),
@@ -65,6 +68,9 @@ function amz_enqueue_theme_scripts() {
         'second_movie_start_time' => $second_movie_start_time * 1000, // milliseconds
         'gate_close' => $gate_close * 1000, // milliseconds,
         'video_id' => $video_id,
+        'first_timer_label' => $first_timer_label,
+        'second_timer_label' => $second_timer_label,
+        'prescreen_timer_label' => $prescreen_timer_label,
     ) );
 
     //wp_enqueue_script('jquery');

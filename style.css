@@ -438,10 +438,21 @@ img {
   opacity: 0.75;
 }
 #main-header .premiere-date-wrap {
+  display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
   opacity: 0.75;
+}
+#main-header .premiere-date-wrap p {
+  font-size: 2.7027rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.landing-video-bg #main-header .premiere-date-wrap p {
+  color: #000;
 }
 .landing-video-bg #main-header .amazon-original,
 .landing-video-bg #main-header .premiere-date-wrap {
@@ -484,8 +495,19 @@ img {
   background-color: #fff;
   color: #1361cc;
 }
+.wmt-inside-logo img {
+  width: 204px;
+  width: 23.4rem;
+  opacity: 0.85;
+}
 #main-content {
   z-index: 3;
+}
+.align-center {
+  align-items: center;
+}
+.wmt-premiere-wrap {
+  margin-top: -6.2rem;
 }
 .top-info-section {
   width: 100%;
@@ -503,7 +525,15 @@ img {
   line-height: 1.4;
   letter-spacing: 2.5px;
 }
+.wmt-premiere-wrap .column-12 {
+  width: 100%;
+}
 .coast-area {
+  display: flex;
+  justify-content: center;
+}
+.remaining-timer#east-cost,
+.remaining-timer#west-cost {
   display: flex;
 }
 .coast-area .coast-times {
@@ -516,7 +546,7 @@ img {
   font-size: 2.8rem;
   line-height: 30px;
   line-height: 1.25;
-  color: #ffde00;
+  color: #5C8738;
   width: auto;
   padding-right: 1rem;
   text-align: left;
@@ -530,7 +560,7 @@ img {
   font-size: 50px;
   font-size: 5.65rem;
   margin: 0;
-  color: #ffde00;
+  color: #5C8738;
   text-transform: capitalize;
   margin-left: -0.6rem;
   text-align: left;
@@ -541,13 +571,23 @@ img {
   margin-left: -1.5rem;
 }
 .remaining-timer .count-down-timer {
-  font-size: 72px;
-  font-size: 8.2rem;
-  line-height: 63px;
-  line-height: 0.9;
-  color: #ffde00;
-  width: 22.5rem;
+  font-size: 5.4054rem;
+  line-height: .9;
+  color: #5C8738;
   text-align: left;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.wmt-premiere-label p {
+  margin: 0px;
+  font-size: 2.7027rem;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.wmt-coast-label p {
+  margin: 0px;
+  font-size: 2.7027rem;
+  margin-right: 20px;
 }
 .landing-video-bg #main-content .amz-center-section .row {
   align-items: center;
@@ -569,12 +609,12 @@ img {
 }
 .password-fields-wrapper label {
   display: block;
-  font-size: 25px;
-  font-size: 2.8rem;
-  margin-bottom: 16px;
+  font-size: 2.7027rem;
   margin-bottom: 1.8rem;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
+  text-transform: initial;
+  font-weight: 700;
 }
 .password-fields-wrapper input#password {
   font-size: 3rem;
@@ -719,7 +759,7 @@ img {
 }
 .pg-disclaimer,
 .hash-tag-logo {
-  opacity: 0.75;
+  opacity: 0.66;
 }
 .landing-video-bg .pg-disclaimer,
 .landing-video-bg .hash-tag-logo {
@@ -734,6 +774,7 @@ img {
   font-size: 18px;
   font-size: 2.1rem;
   font-weight: 600;
+  opacity: 0.66;
 }
 .bottom-credits p .large {
   font-size: 30px;
@@ -800,17 +841,17 @@ img {
   list-style: none;
 }
 .amz-nav-items a {
-  font-family: 'gautreaux', sans-serif;
-  color: #ffde00;
+  color: #fff;
   display: inline-block;
   text-decoration: none;
-  font-size: 5.5rem;
-  margin-bottom: 1.75vw;
-  padding-bottom: 0.2vw;
+  font-size: 5.7rem;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
-.amz-nav-items a::before {
+.amz-nav-items a.active {
+  color: #B8D0A5;
+}
+/* .amz-nav-items a::before {
   position: absolute;
   content: '';
   background-image: url('assets/images/angle-right.svg');
@@ -844,19 +885,19 @@ img {
 .amz-nav-items a.active::after {
   opacity: 1;
   visibility: visible;
-}
+} */
 .gallery-element-rendered .amz-nav-items ul li:nth-child(2) a::after,
 .styling-element-rendered .amz-nav-items ul li:nth-child(2) a::after,
 .amz-nav-items ul li:nth-child(2) a::after {
   bottom: 0.85rem;
 }
-.amz-nav-items a:hover {
+/* .amz-nav-items a:hover {
   margin-left: 5px;
-}
-.amz-nav-items a:hover::before {
+} */
+/* .amz-nav-items a:hover::before {
   opacity: 1;
   visibility: visible;
-}
+} */
 /* .amz-nav-items a.active {
   color: #ffde00;
   border-color: #ffde00;
@@ -999,11 +1040,11 @@ video::-webkit-media-controls {
 /* ============================================== */
 /* =========       Header Style SHeet     ======= */
 /* ============================================== */
-#page-container.faqs-element-rendered,
+/* #page-container.faqs-element-rendered,
 #page-container.involved-element-rendered,
 #page-container.bios-element-rendered {
   background-color: #194368;
-}
+} */
 #page-container.faqs-element-rendered #main-header::before,
 #page-container.involved-element-rendered #main-header::before,
 #page-container.bios-element-rendered #main-header::before {
@@ -1031,38 +1072,53 @@ video::-webkit-media-controls {
   width: 100%;
   left: 0;
 }
+.amz-gallery-item {
+  position: relative;
+}
+.amz-gallery-item::before, 
+.amz-gallery-item::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 120px;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.amz-gallery-item::after {
+  right: 0;
+  background-image: url(assets/images/rightslideshadow.png);
+}
+.amz-gallery-item::before {
+  left: 0;
+  background-image: url(assets/images/leftslideshadow.png);
+}
 .amz-gallery-slider .owl-nav button {
   position: absolute;
   outline: none;
   display: block;
-  height: 2.8vw;
   top: -1.5vw;
-  background: #ffde00 !important;
-  width: 2.8vw;
-  border-radius: 34px;
+  width: 70px;
+  width: 8rem;
 }
 .amz-gallery-slider .owl-nav button.owl-prev {
-  left: -17px;
+  left: -35px;
 }
 .amz-gallery-slider .owl-nav button.owl-next {
-  right: -17px;
+  right: -35px;
 }
 .amz-gallery-slider .owl-nav button span {
-  color: #000;
-  font-size: 3vw;
-  height: 2.8vw;
-  width: 2.8vw;
-  line-height: 2.5vw;
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .amz-gallery-slider .owl-nav button span img {
-  width: 2.37rem;
+  width: 100%;
 }
 .amz-gallery-slider .owl-nav button.owl-prev img {
   margin-left: -4px;
@@ -1072,7 +1128,7 @@ video::-webkit-media-controls {
 }
 @media only screen and (min-width: 768px) {
   @media (max-aspect-ratio: 4/3) {
-    .landing-video-bg #main-content {
+    .landing-video-bg #main-content .amz-center-section {
       bottom: 50%;
       transform: translateY(50%);
       position: absolute;
@@ -1297,8 +1353,8 @@ h3.faq-title {
 .gallery-element-rendered #main-content,
 .styling-element-rendered #main-content,
 .trailer-element-rendered #main-content {
-  bottom: 60%;
-  transform: translateY(60%);
+  bottom: 50%;
+  transform: translateY(50%);
   position: absolute;
   width: 100%;
 }
@@ -1600,6 +1656,17 @@ h3.faq-title {
 /* ============================================== */
 /* =====        End Overlay CSS       ==== */
 /* ============================================== */
+.landing-video-bg #main-footer::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/images/landingbottomshadow.png);
+  z-index: -1;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* ============================================== */
 /* =====        Responsive Style SHeet       ==== */
@@ -1669,15 +1736,15 @@ h3.faq-title {
   .amz-right-logos .amz-award-4 img {
     width: 5.14vw;
   }
-  .premiere-finished .amz-nav-items a {
+  /* .premiere-finished .amz-nav-items a {
     margin-bottom: 1.3vw;
   }
   .premiere-finished .last-nav-item {
     margin-top: 2.11vw;
-  }
+  } */
 }
 @media only screen and (min-width: 768px) {
-  #page-container.faqs-element-rendered .amz-bg,
+  /* #page-container.faqs-element-rendered .amz-bg,
   #page-container.involved-element-rendered .amz-bg,
   #page-container.bios-element-rendered .amz-bg {
     display: none;
@@ -1694,7 +1761,7 @@ h3.faq-title {
     position: fixed;
     width: 100%;
     top: 0;
-  }
+  } */
   span.menu-close {
     display: none;
   }
@@ -1709,7 +1776,7 @@ h3.faq-title {
     width: 100rem;
     margin: auto;
   }
-  .landing-video-bg #main-content {
+  .landing-video-bg #main-content .amz-center-section {
     bottom: 50%;
     transform: translateY(50%);
     position: absolute;
@@ -2103,6 +2170,53 @@ h3.faq-title {
   .amz-gii-question .amz-faq-question-right {
     flex-basis: 100%;
     width: 100%;
+  }
+  .amz-center-section .main-logo-wrap {
+      text-align: center;
+  }
+  .amz-center-section .main-logo-wrap img {
+      width: 100%;
+      max-width: 400px;
+  }
+  .remaining-timer#east-cost,
+  .remaining-timer#west-cost {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+  .wmt-premiere-label,
+  .east-coast-time,
+  .west-coast-time {
+      flex-basis: 100%;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .wmt-premiere-label p {
+      margin-right: 0px;
+      text-align: center;
+  }
+  .remaining-timer .count-down-timer {
+      width: 100%;
+      text-align: center;
+      margin-right: 0px;
+  }
+  .wmt-coast-label {
+      order: 2;
+  }
+  .east-coast-time {
+      flex-basis: 100%;
+      width: 100%;
+      order: 3;
+  }
+  .west-coast-time {
+      order: 3;
+  }
+  .wmt-coast-label p {
+      margin-right: 0px;
+  }
+  .wmt-premiere-wrap {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
   .amz-faq-question-item .faq-content {
     padding-top: 15px;
