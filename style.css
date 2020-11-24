@@ -507,7 +507,21 @@ img {
   align-items: center;
 }
 .wmt-premiere-wrap {
-  margin-top: -6.2rem;
+  margin-top: -6.5rem;
+}
+.main-logo-wrap img {
+  width: 44rem;
+}
+#page-container.landing-video-bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-image: url(assets/images/landingbottomshadow2.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32rem;
+  bottom: 0;
 }
 .top-info-section {
   width: 100%;
@@ -643,6 +657,7 @@ img {
   font-size: 50px;
   font-size: 5.65rem;
   width: 100%;
+  max-width: 30.06rem;
   height: 100%;
   background-color: #5C8738;
   border: 2px solid #5C8738;
@@ -654,6 +669,7 @@ img {
   justify-content: center;
   color: #fff;
   border-radius: 10px;
+  font-weight: 900;
 }
 .password-fields-wrapper button:hover,
 .password-fields-wrapper a:hover,
@@ -664,29 +680,24 @@ img {
   background-color: transparent;
   color: #5C8738;
 }
-.password-fields-wrapper .input-group p.text-yellow {
-  position: absolute;
-  left: 0;
-  right: 0;
+.password-fields-wrapper .input-group p {
   font-size: 2rem;
+  color: #5C8738;
 }
 .gate_not_opened {
   position: relative;
   bottom: -10px;
 }
 .gate_not_opened h5 {
-  color: #ffde00;
+  color: #5C8738;
   text-align: left;
   max-width: 470px;
   max-width: 53.5rem;
-  font-size: 25px;
   font-size: 2.8rem;
-  line-height: 41px;
   line-height: 1.7;
-  margin-left: auto;
-  margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
+  margin: 0;
 }
 .landing-video-bg #main-header {
   opacity: 0.85;
@@ -737,9 +748,25 @@ img {
   justify-content: space-between;
   padding: 0 15px;
 }
-.hash-tag-logo1 img {
-  width: 100%;
-  max-width: 11.75rem;
+.hash-tag-logo1 .bs {
+  flex-basis: 22%;
+  width: 22%;
+}
+.hash-tag-logo1 .ams {
+  flex-basis: 16%;
+  width: 16%;
+}
+.hash-tag-logo1 .mar {
+  flex-basis: 13%;
+  width: 13%;
+}
+.hash-tag-logo1 .ls {
+  flex-basis: 10%;
+  width: 16%;
+}
+.hash-tag-logo1 .por {
+  flex-basis: 21.3%;
+  width: 21.3%;
 }
 .hash-tag-logo1 img.slw {
   width: 86px;
@@ -836,7 +863,7 @@ img {
 }
 .amz-nav-items ul {
   padding: 0;
-  padding-left: 3rem;
+  padding-left: 0rem;
   margin: 0;
   list-style: none;
 }
@@ -847,9 +874,47 @@ img {
   font-size: 5.7rem;
   position: relative;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  padding: 0 15px 0 15px;
+  line-height: 1;
+  margin-bottom: 30px;
+  margin-bottom: 3.4rem;
 }
 .amz-nav-items a.active {
   color: #B8D0A5;
+}
+.amz-nav-items a:hover:before{
+  opacity: 1;
+  transform: translate(0,0);
+}
+.amz-nav-items a:before{
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 100%;
+  opacity: 0;
+  transform: translate(100%,0);
+  transition: all .3s ease-in-out;
+  line-height: 1;
+  font-style: italic;
+}
+.amz-nav-items a div{
+  transition: all .3s ease-in-out;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  line-height: 1;
+}
+.amz-nav-items a:hover div{
+  opacity: 0;
+  transform: translate(-100%,0);
+  left: -15px;
+  transition: all 0.3s ease-in-out;
+}
+.amz-nav-items a.active div {
+  font-style: italic;
 }
 /* .amz-nav-items a::before {
   position: absolute;
@@ -1103,10 +1168,10 @@ video::-webkit-media-controls {
   width: 8rem;
 }
 .amz-gallery-slider .owl-nav button.owl-prev {
-  left: -35px;
+  left: -4rem;
 }
 .amz-gallery-slider .owl-nav button.owl-next {
-  right: -35px;
+  right: -4rem;
 }
 .amz-gallery-slider .owl-nav button span {
   position: absolute;
@@ -1143,17 +1208,6 @@ video::-webkit-media-controls {
   }
   .amz-gallery-slider-wrap {
     padding: 0;
-  }
-  .amz-gallery-slider .owl-nav button {
-    width: 40px;
-    height: 40px;
-    top: -2.5vw;
-  }
-  .amz-gallery-slider .owl-nav button span {
-    font-size: 40px;
-    height: 40px;
-    width: 40px;
-    line-height: 0.8;
   }
   .amz-right-logos {
     margin-top: 30px;
@@ -1412,7 +1466,7 @@ h3.faq-title {
   background-color: rgba(0, 0, 0, 0.5);
   height: 4rem;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   opacity: 0.7;
   z-index: 9999;
@@ -1514,7 +1568,7 @@ h3.faq-title {
   font-weight: 300;
 }
 .amz-bios-details p a {
-  color: #ffde00;
+  color: #5C8738;
 }
 .amz-bios-details p a {
   color: #fff;
@@ -1535,7 +1589,7 @@ h3.faq-title {
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffde00;
+  color: #fff;
   display: none;
 }
 .home-element-rendered .amz-back-to-top {
@@ -1550,12 +1604,23 @@ h3.faq-title {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
+  color: #fff;
+  z-index: 9;
 }
 .amz-video-wrapper .prescreen-countdown-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.prescreen-countdown-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% + 5px);
+  background-color: rgba(1,1,1,.5);
+  top: 0;
+  left: 0;
 }
 .gate-is-open-now .amz-center-section .row .column-6 {
   flex-basis: 100%;
@@ -1660,13 +1725,13 @@ h3.faq-title {
   position: absolute;
   content: "";
   width: 100%;
-  height: 100%;
   background-image: url(assets/images/landingbottomshadow.png);
   z-index: -1;
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  height: 100%;
+  }
 
 /* ============================================== */
 /* =====        Responsive Style SHeet       ==== */
@@ -1956,7 +2021,7 @@ h3.faq-title {
   .toggle-menu-inner::after {
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
@@ -2014,7 +2079,7 @@ h3.faq-title {
   .mobile-menu span.menu-close::after {
     width: 100%;
     height: 3px;
-    background-color: #ffde00;
+    background-color: #5C8738;
     position: absolute;
     content: '';
     top: 15px;
@@ -2109,16 +2174,8 @@ h3.faq-title {
   }
   .amz-nav-items a {
     font-size: 30px;
-    padding-bottom: 3px;
     margin-bottom: 20px;
     width: auto;
-    border-bottom: 4px solid transparent;
-  }
-  .amz-nav-items a::before {
-    height: 20px;
-    width: 15px;
-    top: 10px;
-    left: -25px;
   }
   .amz-nav-items a:hover {
     padding-left: 0;
@@ -2151,7 +2208,7 @@ h3.faq-title {
     content: '';
     height: 120px;
     width: 120px;
-    background-color: #ffde00;
+    background-color: #5c8738;
     border-radius: 50%;
     top: -65px;
     right: -65px;
@@ -2183,6 +2240,14 @@ h3.faq-title {
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 15px;
+      flex-basis: 50%;
+      width: 50%;
+  }
+  .wmt-premiere-label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
   .wmt-premiere-label,
   .east-coast-time,
@@ -2282,6 +2347,7 @@ h3.faq-title {
   #main-header .premiere-date-wrap {
     justify-content: center;
     margin-top: 0;
+    padding: 30px 0px 15px;
   }
   #main-header .premiere-date {
     font-size: 20px;
@@ -2309,6 +2375,9 @@ h3.faq-title {
   .coast-area {
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 56px;
+    position: relative;
   }
   .coast-area .east-coast {
     padding-right: 15px;
@@ -2327,7 +2396,7 @@ h3.faq-title {
   }
   .remaining-timer .count-down-timer {
     font-size: 45px;
-    width: 130px;
+    width: 100%;
   }
   .amz-center-section .row {
     flex-wrap: wrap;
@@ -2429,14 +2498,12 @@ h3.faq-title {
   .hash-tag-logo1 {
     max-width: 550px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding: 0px;
   }
-  .hash-tag-logo1 img {
-    max-width: 22%;
-  }
-  .amz-gallery-slider .owl-nav button span img {
-    width: 12px;
-  }
-  .password-fields-wrapper .input-group p.text-yellow {
+  .password-fields-wrapper .input-group p {
     position: relative;
     font-size: 14px;
     max-width: 320px;
@@ -2467,6 +2534,29 @@ h3.faq-title {
   .styling-element-rendered .amz-nav-items ul li:nth-child(2) a::after,
   .amz-nav-items ul li:nth-child(2) a::after {
     bottom: 4px;
+  }
+  .wmt-inside-logo img {
+    width: 130px;
+    opacity: 1;
+  }
+  #main-header .premiere-date-wrap p {
+    font-size: 18px;
+  }
+  .landing-video-bg .password-fields-wrapper {
+    margin-top: 50px;
+  }
+  .password-fields-wrapper a {
+    font-size: 4.65rem;
+  }
+  .amz-gallery-slider .owl-nav button.owl-prev {
+    left: -20px;
+  }
+  .amz-gallery-slider .owl-nav button.owl-next {
+    right: -20px;
+  }
+  .amz-gallery-slider .owl-nav button {
+    width: 40px;
+    height: 40px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2526,7 +2616,7 @@ h3.faq-title {
   .toggle-menu::before {
     height: 140px;
     width: 140px;
-    background-color: #ffde00;
+    background-color: #5c8738;
     top: -88px;
     right: -83px;
   }
@@ -2544,6 +2634,18 @@ h3.faq-title {
   }
   .top-info-section {
     padding-bottom: 20px;
+  }
+  .coast-area {
+    padding-top: 0px;
+  }
+  .remaining-timer#east-cost, .remaining-timer#west-cost {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .wmt-premiere-label {
+    position: relative;
+    left: 0;
+    top: 0;
   }
 }
 @media only screen and (max-width: 374px) {
@@ -2572,10 +2674,14 @@ h3.faq-title {
 }
 @media only screen and (max-width: 767px) {
   #main-header {
-    padding-top: 40px;
+    padding-top: 30px;
+  }
+  .wmt-inside-logo {
+    text-align: center;
   }
   .amz-right-panel {
     padding-top: 40px;
+    display: none;
   }
   #main-footer {
     margin-top: auto;
@@ -2900,3 +3006,63 @@ h3.faq-title {
     bottom: 25px;
   }
 }
+
+/* Bios css */
+.wmt-bios-item {
+  margin-bottom: 50px;
+}
+.wmt-bios-img {
+  position: relative;
+  padding: 11%;
+}
+.wmt-bios-img img.frame {
+  position: absolute;
+  width: 100%;
+  max-width: 27.028rem;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  top: 0px;
+  z-index: 1;
+}
+.wmt-bios-img img.profile {
+  position: absolute;
+  width: 100%;
+  max-width: 23.9rem;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  top: 1.9rem;
+}
+.wmt-bios-content h3 {
+  font-size: 7.02703rem;
+  margin: 0px;
+  text-align: center;
+}
+.wmt-bios-content p {
+  font-size: 2.7027rem;
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wmt-bios-divider {
+  text-align: center;
+}
+.wmt-bios-divider img {
+  width: 100%;
+  max-width: 178px;
+}
+@media only screen and (min-width: 768px) {
+  .amz-bios-wrapper {
+    overflow: auto;
+    height: 58.5rem;
+  }
+  .amz-bios-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Bios css */

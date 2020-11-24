@@ -97,8 +97,8 @@ class HomePage extends React.Component {
             this.redirectToHome();
             clearInterval(this.timeinterval);
             console.log('Interval done 2nd');
-            let trailerLink = document.querySelector('a#trailer');
-            trailerLink.click();
+            // let trailerLink = document.querySelector('a#trailer');
+            // trailerLink.click(); 
           }
         }
       }, 1000);
@@ -164,7 +164,7 @@ class HomePage extends React.Component {
     const toggleMenu = document.querySelector('.toggle-menu');
     let hasFooter;
 
-    if (currentPage === 'bios' || currentPage === 'faqs' || currentPage === 'involved') {
+    if (currentPage === 'faqs' || currentPage === 'involved') {
       hasFooter = false;
     } else {
       hasFooter = true;
@@ -257,9 +257,9 @@ class HomePage extends React.Component {
 
     let bgUrl = 'theater-bg.jpg';
     if (this.state.currentPage === 'gallery') {
-      bgUrl = 'gallery-bg.jpg';
+      bgUrl = 'Gallery-bg.jpg';
     } else if (this.state.currentPage === 'bios') {
-      bgUrl = 'bios-bg.jpg';
+      bgUrl = 'Bios-bg.jpg';
     }
 
     return (
@@ -327,11 +327,11 @@ class HomePage extends React.Component {
         </div>
         {hasFooter ? <Footer /> : ''}
 
-        <div class="amz-back-to-top">
+        {/* <div class="amz-back-to-top">
           <a href="#">
             <img src={`${themeUrl}/assets/images/up-arrow.svg`} alt="Back to top" />
           </a>
-        </div>
+        </div> */}
       </div>
     );
   }

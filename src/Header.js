@@ -39,7 +39,7 @@ class Header extends React.Component {
               ) : (
                 ''
               )}
-              {/*{hasBgAudio ? (
+              {hasBgAudio ? (
                 <React.Fragment>
                   <div className="header-sound-toggle">
                     <p className="font-address text-uppercase">
@@ -60,13 +60,13 @@ class Header extends React.Component {
                     <source src={themeUrl + '/assets/audios/bg-audio.mp3'} type="audio/mpeg" />
                     {/* <source src="audios/creativeminds.ogg" type="audio/ogg" />
                     <source src="audios/creativeminds.wav" type="audio/wav" /> */}
-                  {/*</audio>
+                  </audio>
                 </React.Fragment>
               ) : (
                 ''
-              )} */}
+              )}
 
-              {/* {hasHeaderSound ? (
+              {hasHeaderSound ? (
                 <React.Fragment>
                   <div className="header-sound-toggle fade-in">
                     <p className="font-address text-uppercase">
@@ -86,7 +86,7 @@ class Header extends React.Component {
                 </React.Fragment>
               ) : (
                 ''
-              )}  */}
+              )} 
             </div>
             <div className="column-4">
             </div>

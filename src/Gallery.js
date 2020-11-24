@@ -24,13 +24,19 @@ class Gallery extends Component {
         <div className="amz-gallery-slider-wrap" style={{ width: '100%' }}>
           <div id="amz-gallery-slider" className="amz-gallery-slider owl-carousel">
             <div className="amz-gallery-item">
-              <img src={`${themeUrl}/assets/images/gallery/gallery-1.jpg`} alt="gallery1" />
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-1.jpg`} alt="gallery1" />
             </div>
             <div className="amz-gallery-item">
-              <img src={`${themeUrl}/assets/images/gallery/gallery-2.jpg`} alt="gallery2" />
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-2.jpg`} alt="gallery2" />
             </div>
             <div className="amz-gallery-item">
-              <img src={`${themeUrl}/assets/images/gallery/gallery-3.jpg`} alt="gallery3" />
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-3.jpg`} alt="gallery3" />
+            </div>
+            <div className="amz-gallery-item">
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-4.jpg`} alt="gallery3" />
+            </div>
+            <div className="amz-gallery-item">
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-5.jpg`} alt="gallery3" />
             </div>
           </div>
         </div>

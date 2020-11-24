@@ -158,7 +158,7 @@ export default class MainVideo extends React.Component {
                   style={{
                     width: this.state.progressBar + '%',
                     height: '.5rem',
-                    backgroundColor: '#ffde00',
+                    backgroundColor: '#fff',
                     borderRadius: '5px',
                     transition: 'all 0.4s ease-in-out',
                   }}
@@ -176,7 +176,7 @@ export default class MainVideo extends React.Component {
 
           {overlayStatus ? (
             <div className="video-volume-overlay fade-in" onClick={disableOverlay}>
-              <div className="syl-welcome-screening-wrapper">
+              {/* <div className="syl-welcome-screening-wrapper">
                 <div className="video-overlay-arrow">
                   <img src={`${themeUrl}/assets/images/overlay-arrow.svg`} alt="Overlay Arrow" />
                 </div>
@@ -184,7 +184,7 @@ export default class MainVideo extends React.Component {
                   <img className="overlay-ticket" src={`${themeUrl}/assets/images/overlay-bg.svg`} alt="Overlay Image" />
                   <img className="overlay-ticket-hover" src={`${themeUrl}/assets/images/overlay-bg-hover.svg`} alt="Overlay Image Hover" />
                 </div>
-              </div>
+              </div> */}
             </div>
           ) : (
             ''

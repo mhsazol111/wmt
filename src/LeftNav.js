@@ -10,26 +10,26 @@ class LeftNav extends Component {
             {isGateClosed ? (
               <React.Fragment>
                 <li>
-                  <a href="/trailer" id="trailer" className={currentPage === 'trailer' ? 'active' : ''} onClick={handleClick}>
-                    Trailer
+                  <a data-hover="Trailer" href="/trailer" id="trailer" className={currentPage === 'trailer' ? 'active' : ''} onClick={handleClick}>
+                    <div>Trailer</div>
                   </a>
                 </li>
               </React.Fragment>
             ) : (
               <li>
-                <a href="/" id="home" className={currentPage === 'home' ? 'active' : ''} onClick={handleClick}>
-                  Film
+                <a data-hover="Presentation" href="/" id="home" className={currentPage === 'home' ? 'active' : ''} onClick={handleClick}>
+                <div>Presentation</div>
                 </a>
               </li>
             )}
             <li>
-              <a href="/gallery" id="gallery" className={currentPage === 'gallery' ? 'active' : ''} onClick={handleClick}>
-                Gallery
+              <a data-hover="Gallery" href="/gallery" id="gallery" className={currentPage === 'gallery' ? 'active' : ''} onClick={handleClick}>
+              <div>Gallery</div>
               </a>
             </li>
             <li>
-              <a href="/bios" id="bios" className={currentPage === 'bios' ? 'active' : ''} onClick={handleClick}>
-                Bios
+              <a data-hover="Bios" href="/bios" id="bios" className={currentPage === 'bios' ? 'active' : ''} onClick={handleClick}>
+              <div>Bios</div>
               </a>
             </li>
           </ul>

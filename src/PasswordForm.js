@@ -8,14 +8,14 @@ class PasswordForm extends Component {
           <div className="password-fields-wrapper text-center">
             <form method="post" onSubmit={this.props.loginHandler}>
               <div className="input-group">
-                <label for="password" className="text-center text-uppercase text-light font-address">
+                <label for="password" className="text-center text-uppercase text-light">
                   {this.props.passLabel}
                 </label>
                 <input type="password" id="password" name="password" maxlength="6" value={this.props.pass} onChange={this.props.onChange} />
-                {this.props.errorMsg ? <p className="text-center text-uppercase text-yellow">{this.props.errorMsg}</p> : ''}
+                {this.props.errorMsg ? <p className="text-center text-uppercase">{this.props.errorMsg}</p> : ''}
               </div>
               <div className="submit-wrap">
-                <button type="submit" className="text-light text-center font-gautreaux">
+                <button type="submit" className="text-light text-center">
                   {this.props.isRequesting ? 'Please wait' : 'Enter'}
                 </button>
               </div>

@@ -150,7 +150,7 @@ class LoginPage extends React.Component {
         style={{ width: '100%', minHeight: '100vh' }}
       >
         <div className="amz-bg">
-          <div className="amz-bg-layer-image" style={{ backgroundImage: `url(${themeUrl}/assets/images/landing-bg.jpg)` }}></div>
+          <div className="amz-bg-layer-image" style={{ backgroundImage: `url(${themeUrl}/assets/images/Home_WMT.jpg)` }}></div>
         </div>
         <Header
           hasBgAudio={true}
@@ -171,7 +171,7 @@ class LoginPage extends React.Component {
                     {!isGateClose ? (
                       <div className="remaining-timer" id="east-cost">
                         <div className="wmt-premiere-label">
-                          <p>Premiere starts in</p>
+                          <p>Doors open at</p>
                         </div>
                         <div className="east-coast-time">
                           <Countdown timeTillDate={this.state.firstShow} timeFormat="YYYY-MM-DD H:m:s" />
@@ -209,11 +209,12 @@ class LoginPage extends React.Component {
             <div className="container">
               <div className="row">
 
-                <div className="column-4"></div>
                 <div className="column-4">
                   <div className="main-logo-wrap">
                     <img src={themeUrl + '/assets/images/main-logo.svg'} alt="Wild Mountain Thyme" />
                   </div>
+                </div>
+                <div className="column-4">
                 </div>
                 <div className="column-4">
                   {isGateOpen && !isGateClose ? (
