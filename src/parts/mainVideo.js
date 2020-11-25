@@ -175,7 +175,13 @@ export default class MainVideo extends React.Component {
           </div>
 
           {overlayStatus ? (
-            <div className="video-volume-overlay fade-in" onClick={disableOverlay}>
+            <div className="video-volume-overlay video-overlay-w fade-in" onClick={disableOverlay}>
+              <div className="fireball-sound-icon">
+                <div className="fireball-sound-inner">
+                  <img src={`${themeUrl}/assets/images/sound-overlay.svg`} alt="Sound Icon" />
+                  <h4>Click here for sound</h4>
+                </div>
+              </div>
               {/* <div className="syl-welcome-screening-wrapper">
                 <div className="video-overlay-arrow">
                   <img src={`${themeUrl}/assets/images/overlay-arrow.svg`} alt="Overlay Arrow" />

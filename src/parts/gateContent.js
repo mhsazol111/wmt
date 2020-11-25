@@ -13,8 +13,8 @@ export default class GateContent extends React.Component {
     if (!this.state.isClosed) {
       return (
         <div className="gate_not_opened">
-          <h5 className="text-uppercase">
-          Please, have your password ready, soon you will be able to access the show
+          <h5 className="text-center">
+          Please, have your password ready, <br/>soon you will be able to access the show
           </h5>
         </div>
       );

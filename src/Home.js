@@ -255,7 +255,7 @@ class HomePage extends React.Component {
       optionalComponents = <Bios />;
     }
 
-    let bgUrl = 'theater-bg.jpg';
+    let bgUrl = 'theater-bg-n.jpg';
     if (this.state.currentPage === 'gallery') {
       bgUrl = 'Gallery-bg.jpg';
     } else if (this.state.currentPage === 'bios') {

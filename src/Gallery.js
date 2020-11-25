@@ -9,8 +9,9 @@ class Gallery extends Component {
       autoplay: false,
       dots: false,
       nav: true,
-      navText: [`<span><img src=${amzData.theme_url}/assets/images/left-arrow.png alt='arrow'/></span>`, `<span><img src=${amzData.theme_url}/assets/images/right-arrow.png alt='arrow'/></span>`],
+      navText: [`<span><img src=${amzData.theme_url}/assets/images/arrow-prev.svg alt='arrow'/><p>Previous</p></span>`, `<span><img src=${amzData.theme_url}/assets/images/arrow-next.svg alt='arrow'/><p>Next</p></span>`],
       smartSpeed: 1000,
+      navContainer: '#wmt-nav',
     });
 
     $owl.trigger('refresh.owl.carousel');
@@ -39,6 +40,7 @@ class Gallery extends Component {
               <img src={`${themeUrl}/assets/images/gallery/Gallery-5.jpg`} alt="gallery3" />
             </div>
           </div>
+          <div id="wmt-nav" className="owl-nav"></div>
         </div>
       </div>
     );
