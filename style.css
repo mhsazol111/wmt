@@ -410,15 +410,16 @@ img {
   width: 100%;
 }
 #main-header .header-sound-toggle p {
-  color: #919191;
+  color: #000;
   margin: 0;
   display: flex;
   align-items: center;
-  font-size: 2.1rem;
+  font-size: 1.4054rem;
+  font-weight: 700;
 }
 #main-header .header-sound-toggle p .active,
 #main-header .header-sound-toggle p .clickable:hover {
-  color: #ffde00;
+  color: #fff;
 }
 #main-header .header-sound-toggle p .clickable {
   margin: 0 0.9rem;
@@ -495,6 +496,20 @@ img {
   background-color: #fff;
   color: #1361cc;
 }
+.main-logo-wrap img {
+  width: 41.73rem;
+}
+#page-container.landing-video-bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-image: url(assets/images/landingbottomshadow2.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32rem;
+  bottom: 0;
+}
 .wmt-inside-logo img {
   width: 204px;
   width: 23.4rem;
@@ -508,20 +523,6 @@ img {
 }
 .wmt-premiere-wrap {
   margin-top: -6.5rem;
-}
-.main-logo-wrap img {
-  width: 44rem;
-}
-#page-container.landing-video-bg::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  background-image: url(assets/images/landingbottomshadow2.png);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 32rem;
-  bottom: 0;
 }
 .top-info-section {
   width: 100%;
@@ -549,6 +550,7 @@ img {
 .remaining-timer#east-cost,
 .remaining-timer#west-cost {
   display: flex;
+  align-items: center;
 }
 .coast-area .coast-times {
   display: flex;
@@ -597,11 +599,13 @@ img {
   font-size: 2.7027rem;
   font-weight: 700;
   margin-right: 20px;
+  color: #5C8738;
 }
 .wmt-coast-label p {
   margin: 0px;
   font-size: 2.7027rem;
   margin-right: 20px;
+  color: #5C8738;
 }
 .landing-video-bg #main-content .amz-center-section .row {
   align-items: center;
@@ -3007,62 +3011,40 @@ h3.faq-title {
   }
 }
 
-/* Bios css */
+/* Bios CSS */
 .wmt-bios-item {
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1287px;
+}
+.wmt-biography-wrap .wmt-bios-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .wmt-bios-img {
-  position: relative;
-  padding: 11%;
+  flex-basis: 55.25%;
+  width: 55.25%;
 }
-.wmt-bios-img img.frame {
-  position: absolute;
-  width: 100%;
-  max-width: 27.028rem;
-  height: auto;
-  left: 0px;
-  right: 0px;
-  margin: 0px auto;
-  top: 0px;
-  z-index: 1;
-}
-.wmt-bios-img img.profile {
-  position: absolute;
-  width: 100%;
-  max-width: 23.9rem;
-  height: auto;
-  left: 0px;
-  right: 0px;
-  margin: 0px auto;
-  top: 1.9rem;
+.wmt-bios-content {
+  flex-basis: 44.75%;
+  width: 44.75%;
 }
 .wmt-bios-content h3 {
   font-size: 7.02703rem;
   margin: 0px;
-  text-align: center;
 }
 .wmt-bios-content p {
-  font-size: 2.7027rem;
-  width: 100%;
-  max-width: 850px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.wmt-bios-divider {
-  text-align: center;
-}
-.wmt-bios-divider img {
-  width: 100%;
-  max-width: 178px;
+  font-size: 2.16216rem;
 }
 @media only screen and (min-width: 768px) {
-  .amz-bios-wrapper {
-    overflow: auto;
-    height: 58.5rem;
+  #page-container.bios-element-rendered {
+    padding-top: 24.6486rem;
   }
-  .amz-bios-wrapper::-webkit-scrollbar {
-    display: none;
+  #page-container.bios-element-rendered #main-header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
   }
 }
-/* Bios css */
+/* Bios CSS */
