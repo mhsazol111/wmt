@@ -14,7 +14,7 @@ class LoginPage extends React.Component {
     super(props);
     this.state = {
       pass: '',
-      passLabel: 'Enter your password',
+      passLabel: 'Enter your Access Code',
       errorMsg: '',
       isLoggedIn: false,
       isRequesting: false,

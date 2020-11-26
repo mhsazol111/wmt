@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 class Bios extends Component {
+  componentDidMount() {
+    let $ = jQuery;
+    $('.amz-back-to-top a').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 300);
+      return false;
+    });
+  }
   render() {
     let themeUrl = amzData.theme_url;
     return (
@@ -58,7 +65,7 @@ class Bios extends Component {
           </div>
         </div>
         <div className="wmt-biography-bottom">
-          <p>BLEECKER STREET AMASIA ENTERTAINMENT Present in Association with APERTURE MEDIA PARTNERS FÍS ÉIREANN/SCREEN IRELAND and WRAP FUND A MAR-KEY PICTURES LIKELY STORY and PORT PICTURES Production A Film By JOHN PATRICK SHANLEY “WILD MOUNTAIN THYME” EMILY BLUNT JAMIE DORNAN JON HAMM DEARBHLA MOLLOY and CHRISTOPHER WALKEN Casting by JEANNE MCCARTHY Music Supervisor ROBIN URDANG Music By AMELIA WARNER Emily Blunt’s Costumes Designed By KASIA WALICKA MAIMONE Costume Designer TRIONA LILLIS Production Designer ANNA RACKARD Editor IAN BLUME Director of Photography STEPHEN GOLDBLATT ASC, BSC Co-Executive Producers CRAIG DWORKIN LELAND GREENBERG HARRISON KLEIN CRAIG SNIDER Executive Producers ANDREW KRAMER ZYGI KAMASA JONATHAN LOUGHRAN STEPHEN MALLAGHAN JARED UNDERWOOD ANDREW ROBINSON DANNY MANDEL COLIN MARSHALL WILLIAM C. GALLO ALLEN CHURCH Producers LESLIE URDANG ANTHONY BREGMAN ALEX WITCHEL MARTINA NILAND MICHAEL A. HELFANT BRADLEY GALLO Based on the Play “Outside Mullingar” by JOHN PATRICK SHANLEY Written for the Screen and Directed by JOHN PATRICK SHANLEY</p>
+          <p>BLEECKER STREET AMASIA ENTERTAINMENT Present in Association with APERTURE MEDIA PARTNERS FÍS ÉIREANN/SCREEN<be/> IRELAND and WRAP FUND A MAR-KEY PICTURES LIKELY STORY and<br/> PORT PICTURES Production A Film By JOHN PATRICK SHANLEY “WILD MOUNTAIN THYME”<br/> EMILY BLUNT JAMIE DORNAN JON HAMM DEARBHLA MOLLOY and CHRISTOPHER WALKEN Casting by JEANNE MCCARTHY Music Supervisor ROBIN URDANG Music By AMELIA WARNER Emily Blunt’s Costumes Designed By KASIA WALICKA MAIMONE Costume Designer TRIONA LILLIS Production Designer ANNA RACKARD Editor IAN BLUME Director of Photography STEPHEN GOLDBLATT ASC, BSC Co-Executive Producers CRAIG DWORKIN LELAND GREENBERG HARRISON KLEIN CRAIG SNIDER Executive Producers ANDREW KRAMER ZYGI KAMASA JONATHAN LOUGHRAN STEPHEN MALLAGHAN JARED UNDERWOOD ANDREW ROBINSON DANNY MANDEL COLIN MARSHALL WILLIAM C. GALLO ALLEN CHURCH Producers LESLIE URDANG ANTHONY BREGMAN ALEX WITCHEL MARTINA NILAND MICHAEL A. HELFANT BRADLEY GALLO Based on the Play “Outside Mullingar” by JOHN PATRICK SHANLEY Written for the Screen and Directed by JOHN PATRICK SHANLEY</p>
           <div class="amz-back-to-top">
             <a href="#">
               <img src={`${themeUrl}/assets/images/back-top.svg`} alt="Back to top" />

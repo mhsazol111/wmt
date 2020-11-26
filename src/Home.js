@@ -257,7 +257,7 @@ class HomePage extends React.Component {
 
     let bgUrl = 'theater-bg-n.jpg';
     if (this.state.currentPage === 'gallery') {
-      bgUrl = 'Gallery-bg.jpg';
+      bgUrl = 'Photos_WMT.jpg';
     } else if (this.state.currentPage === 'bios') {
       bgUrl = 'Bios-bg.jpg';
     }

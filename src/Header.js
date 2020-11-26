@@ -9,7 +9,7 @@ class Header extends React.Component {
   render() {
     let themeUrl = amzData.theme_url;
     let {
-      premiereFinished,
+      // premiereFinished,
       hasNav,
       handleNavClick,
       navCurrentPage,
@@ -19,11 +19,11 @@ class Header extends React.Component {
       playAudio,
       pauseAudio,
       audioPlaying,
-      hasHeaderSound,
-      videoMuted,
-      onVideoMuteToggle,
-      onVideoMute,
-      onVideoUnmute,
+      // hasHeaderSound,
+      // videoMuted,
+      // onVideoMuteToggle,
+      // onVideoMute,
+      // onVideoUnmute,
       insideLogo,
     } = this.props;
 
@@ -52,7 +52,8 @@ class Header extends React.Component {
                         off
                       </span>
                       <span id="hs-toggle-img" className="clickable" onClick={toggleAudio}>
-                        <img src={themeUrl + '/assets/images/sound-animation.gif'} />
+                        <img className="white" src={themeUrl + '/assets/images/sound-animation-w.gif'} />
+                        <img className="black" src={themeUrl + '/assets/images/sound-animation-b.gif'} />
                       </span>
                     </p>
                   </div>
@@ -66,7 +67,7 @@ class Header extends React.Component {
                 ''
               )}
 
-              {hasHeaderSound ? (
+              {/* {hasHeaderSound ? (
                 <React.Fragment>
                   <div className="header-sound-toggle fade-in">
                     <p className="font-address text-uppercase">
@@ -79,14 +80,15 @@ class Header extends React.Component {
                         off
                       </span>
                       <span id="hs-toggle-img" className="clickable" onClick={onVideoMuteToggle}>
-                        <img src={themeUrl + '/assets/images/sound-animation.gif'} />
+                        <img className="white" src={themeUrl + '/assets/images/sound-animation-w.gif'} />
+                        <img className="black" src={themeUrl + '/assets/images/sound-animation-b.gif'} />
                       </span>
                     </p>
                   </div>
                 </React.Fragment>
               ) : (
                 ''
-              )} 
+              )}  */}
             </div>
             <div className="column-4">
             </div>

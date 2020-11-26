@@ -104,10 +104,10 @@
     });
 
     // Back to top
-    // $('.amz-back-to-top a').on('click', function () {
-    //   $('html, body').animate({ scrollTop: 0 }, 300);
-    //   return false;
-    // });
+    $('.amz-back-to-top a').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 300);
+      return false;
+    });
 
     // $(window).on('scroll', function () {
     //   if ($(this).scrollTop() < 100) {

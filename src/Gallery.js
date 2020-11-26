@@ -9,7 +9,7 @@ class Gallery extends Component {
       autoplay: false,
       dots: false,
       nav: true,
-      navText: [`<span><img src=${amzData.theme_url}/assets/images/arrow-prev.svg alt='arrow'/><p>Previous</p></span>`, `<span><img src=${amzData.theme_url}/assets/images/arrow-next.svg alt='arrow'/><p>Next</p></span>`],
+      navText: [`<span><p class="arrow"><img src=${amzData.theme_url}/assets/images/back-top.svg alt='arrow'/></p><p>Previous</p></span>`, `<span><p class="arrow"><img src=${amzData.theme_url}/assets/images/back-top.svg alt='arrow'/></p><p>Next</p></span>`],
       smartSpeed: 1000,
       navContainer: '#wmt-nav',
     });
@@ -23,6 +23,9 @@ class Gallery extends Component {
     return (
       <div id="amz-gallery-wrapper" className="fade-in">
         <div className="amz-gallery-slider-wrap" style={{ width: '100%' }}>
+          <div className="frame-wrap">
+            <img src={`${themeUrl}/assets/images/Frame_Gallery_WMT.png`} alt="Frame" />
+          </div>
           <div id="amz-gallery-slider" className="amz-gallery-slider owl-carousel">
             <div className="amz-gallery-item">
               <img src={`${themeUrl}/assets/images/gallery/Gallery-1.jpg`} alt="gallery1" />
