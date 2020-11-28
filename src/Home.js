@@ -97,8 +97,8 @@ class HomePage extends React.Component {
             this.redirectToHome();
             clearInterval(this.timeinterval);
             console.log('Interval done 2nd');
-            // let trailerLink = document.querySelector('a#trailer');
-            // trailerLink.click(); 
+            let trailerLink = document.querySelector('a#trailer');
+            trailerLink.click();
           }
         }
       }, 1000);

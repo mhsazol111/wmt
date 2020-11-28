@@ -52,6 +52,10 @@
       $('.toggle-menu').removeClass('hamburger-active');
       $('#main-header').removeClass('header-active');
     });
+    $('body').on('click', '.amz-nav-items a', function () {
+      $('.toggle-menu').removeClass('hamburger-active');
+      $('#main-header').removeClass('header-active');
+    });
 
     // Landing Page Video Background
     // if ($('.landing-video-bg').length) {
@@ -109,6 +113,11 @@
       return false;
     });
 
+    // Detect Windows OS
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+      $('#page-container').addClass('win-os');
+    }
+
     // $(window).on('scroll', function () {
     //   if ($(this).scrollTop() < 100) {
     //     $('.amz-back-to-top a').fadeOut(300);
@@ -147,6 +156,13 @@
       alert(
         'Unsupported Browser! This website will offer limited functionality in this browser. We only support the recent versions of major browsers like Chrome, Safari, and Edge.'
       );
+    }
+    if (!iOS() && navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     }
   }); // Document Ready
 })(jQuery);

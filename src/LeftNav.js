@@ -8,13 +8,11 @@ class LeftNav extends Component {
         <div className="amz-nav-items">
           <ul>
             {isGateClosed ? (
-              <React.Fragment>
                 <li>
                   <a data-hover="Trailer" href="/trailer" id="trailer" className={currentPage === 'trailer' ? 'active' : ''} onClick={handleClick}>
                     <div>Trailer</div>
                   </a>
                 </li>
-              </React.Fragment>
             ) : (
               <li>
                 <a data-hover="Presentation" href="/" id="home" className={currentPage === 'home' ? 'active' : ''} onClick={handleClick}>

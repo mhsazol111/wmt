@@ -94,7 +94,7 @@ function amz_add_header_script() {
     <script async src="//static.getclicky.com/js"></script>
 <?php
 }
-add_action('wp_head', 'amz_add_header_script', 20);
+// add_action('wp_head', 'amz_add_header_script', 20);
 
 // Include required files
 require_once __DIR__ . '/apis/routes.php';

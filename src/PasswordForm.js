@@ -12,7 +12,7 @@ class PasswordForm extends Component {
                   {this.props.passLabel}
                 </label>
                 <input type="password" id="password" name="password" maxlength="6" value={this.props.pass} onChange={this.props.onChange} />
-                {this.props.errorMsg ? <p className="text-center text-uppercase">{this.props.errorMsg}</p> : ''}
+                {this.props.errorMsg ? <p className="text-center">{this.props.errorMsg}</p> : ''}
               </div>
               <div className="submit-wrap">
                 <button type="submit" className="text-light text-center">
