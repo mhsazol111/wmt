@@ -459,7 +459,6 @@ img {
   font-size: 25px;
   font-size: 2.85rem;
   text-align: center;
-  font-weight: 700;
   color: #fff;
   margin: 0;
 }
@@ -721,9 +720,10 @@ img {
   line-height: 1;
   padding: 2.38rem 0 1.6rem 0;
 }
-.win-os .password-fields-wrapper button, .win-os .password-fields-wrapper a {
-  line-height: inherit;
-  padding: 1.02rem 0px;
+.win-os .password-fields-wrapper button,
+.win-os .password-fields-wrapper a {
+    line-height: inherit;
+    padding: 1.02rem 0px;
 }
 /* .password-fields-wrapper a {
   height: 73px;
@@ -942,7 +942,7 @@ img {
   font-size: 5.7rem;
   position: relative;
   transition: all 0.3s ease-in-out;
-  overflow: hidden;
+/*   overflow: hidden; */
   padding: 0 15px 0 15px;
   line-height: 1;
   margin-bottom: 30px;
@@ -954,6 +954,7 @@ img {
 .amz-nav-items a:hover:before{
   opacity: 1;
   transform: translate(0,0);
+  z-index: 9999;
 }
 .amz-nav-items a:before{
   content: attr(data-hover);
@@ -962,7 +963,7 @@ img {
   left: 15px;
   width: 100%;
   opacity: 0;
-  transform: translate(100%,0);
+  transform: translate(10%,0);
   transition: all .3s ease-in-out;
   line-height: 1;
   font-style: italic;
@@ -978,7 +979,7 @@ img {
 }
 .amz-nav-items a:hover div{
   opacity: 0;
-  transform: translate(-100%,0);
+  transform: translate(-10%,0);
   left: -15px;
   transition: all 0.3s ease-in-out;
 }
@@ -1127,7 +1128,7 @@ video::-webkit-media-controls {
 /* ============================================== */
 /* =========       Header Style SHeet     ======= */
 /* ============================================== */
-#page-container.faqs-element-rendered #main-header::before,
+/* #page-container.faqs-element-rendered #main-header::before,
 #page-container.involved-element-rendered #main-header::before,
 #page-container.bios-element-rendered #main-header::before {
   position: absolute;
@@ -1139,7 +1140,7 @@ video::-webkit-media-controls {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 /* ============================================== */
 /* =========       Header Style SHeet      ======= */
 /* ============================================== */
@@ -1972,7 +1973,8 @@ h3.faq-title {
     width: 100%;
   }
   .home-element-rendered .amz-bg-layer-image,
-  .trailer-element-rendered .amz-bg-layer-image {
+  .trailer-element-rendered .amz-bg-layer-image,
+  .gallery-element-rendered .amz-bg-layer-image	{
     background-size: contain;
   }
 }
@@ -2014,11 +2016,11 @@ h3.faq-title {
   }
 }
 @media only screen and (max-width: 1366px) {
-  #page-container.faqs-element-rendered #main-header::before,
+/*   #page-container.faqs-element-rendered #main-header::before,
   #page-container.involved-element-rendered #main-header::before,
   #page-container.bios-element-rendered #main-header::before {
     height: 8vw;
-  }
+  } */
   .amz-faq-designation h4 {
     font-size: 1.5vw;
   }
@@ -2699,8 +2701,8 @@ h3.faq-title {
     padding: 1.38rem 0 0.6rem 0;
   }
   .win-os .password-fields-wrapper a {
-    line-height: inherit;
-    padding: 0.50rem 0px;
+	line-height: inherit;
+	padding: 0.50rem 0px;
   }
   .amz-gallery-slider .owl-nav button.owl-prev {
     left: -20px;
@@ -2744,6 +2746,9 @@ h3.faq-title {
   .video-volume-overlay.video-overlay-w {
     position: absolute;
   }
+  .gallery-element-rendered .premiere-date-wrap {
+	margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 640px) {
   .footer-top-logos img {
@@ -2752,6 +2757,10 @@ h3.faq-title {
   }
   .footer-top-logos {
     margin-bottom: 20px;
+  }
+  .frame-wrap {
+	top: -20%;
+	height: 112%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -2813,6 +2822,10 @@ h3.faq-title {
     padding-bottom: 5px;
     margin-bottom: 12px;
   }
+  .frame-wrap {
+	height: 112%;
+	top: -23%;
+  }
 }
 @media only screen and (max-width: 479px) {
   .remaining-timer .count-down-timer {
@@ -2833,10 +2846,19 @@ h3.faq-title {
     left: 0;
     top: 0;
   }
+  .gallery-element-rendered .premiere-date-wrap {
+	margin-bottom: 35px;
+  }
+  .frame-wrap {
+	height: 108%;
+  }
 }
 @media only screen and (max-width: 374px) {
   .remaining-timer .timer-label {
     font-size: 14px;
+  }
+  .frame-wrap {
+	height: 103%;
   }
 }
 .amz-gii-name h2,
@@ -2882,8 +2904,13 @@ h3.faq-title {
     display: flex;
     justify-content: center;
   }
-  .amz-bg-layer-image {
+/*   .amz-bg-layer-image {
     background-position: 100% 57%;
+  } */
+  .home-element-rendered .amz-bg-layer-image,
+  .trailer-element-rendered .amz-bg-layer-image{
+    background-image: url(assets/images/TheaterEmpty_WMT.jpg) !important;
+    background-position: top center;
   }
   .pg-disclaimer img {
     width: 90px;
@@ -3163,9 +3190,11 @@ h3.faq-title {
     bottom: 12%;
     transform: translateY(10%);
   }
+	/*media all*/
   .gate-is-open-now .amz-center-section .row {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
+	/*media all*/
   .frame-wrap {
     position: absolute;
     width: 147rem;
@@ -3174,6 +3203,8 @@ h3.faq-title {
     display: inline;
     height: 152%;
   }
+
+
 }
 
 @media (max-width: 767px) and (-ms-high-contrast: none), (max-width: 767px) and (-ms-high-contrast: active) {
@@ -3237,6 +3268,7 @@ h3.faq-title {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
+  opacity: .75;
 }
 @media only screen and (min-width: 768px) {
   /* #page-container.bios-element-rendered #main-content {
