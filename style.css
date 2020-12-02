@@ -1950,6 +1950,18 @@ h3.faq-title {
   .amz-right-logos .amz-award-4 img {
     width: 5.14vw;
   }
+  .wmt-bios-item:first-child {
+    padding-bottom: 70px;
+    padding-bottom: 8rem;
+  }
+  .wmt-bios-item:nth-child(2) {
+    padding-bottom: 70px;
+    padding-bottom: 8rem;
+  }
+  .wmt-bios-item:nth-child(5) {
+    padding-bottom: 70px;
+    padding-bottom: 8rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   span.menu-close {
@@ -3232,30 +3244,39 @@ h3.faq-title {
   align-items: center;
   width: 100%;
   max-width: 1287px;
+  max-width: 147rem;
 }
-.wmt-biography-wrap .wmt-bios-item:nth-child(even) {
+.wmt-biography-wrap .wmt-bios-item:nth-child(odd) {
   flex-direction: row-reverse;
 }
 .wmt-bios-img {
   flex-basis: 55.25%;
   width: 55.25%;
 }
+.wmt-bios-img img {
+  width: 100%;
+}
 .wmt-bios-content {
   flex-basis: 44.75%;
   width: 44.75%;
 }
-.wmt-bios-content h3 {
+/* .wmt-bios-content h3 {
   font-size: 65px;
   font-size: 7.4rem;
   margin: 0px;
   opacity: 0.75;
   margin-bottom: 20px;
-}
+} */
 .wmt-bios-content p {
-  font-size: 20px;
-  font-size: 2.28rem;
+  font-size: 19px;
+  font-size: 2.18rem;
   opacity: 0.75;
   margin: 0;
+}
+.wmt-bios-content p strong {
+  font-size: 40px;
+  font-size: 4.6rem;
+  line-height: 1;
 }
 .wmt-biography-bottom {
   padding-top: 20rem;
@@ -3319,7 +3340,7 @@ h3.faq-title {
     align-items: inherit;
   }
   #page-container.bios-element-rendered #main-content .amz-bios-wrapper {
-    padding-top: 24.6486rem;
+    padding-top: 10rem;
     padding-bottom: 24.6486rem;
   }
   #page-container.bios-element-rendered #main-header {
@@ -3339,8 +3360,8 @@ h3.faq-title {
     width: 100%;
     text-align: center;
   }
-  .wmt-bios-content h3 {
-    font-size: 35px;
+  .wmt-bios-content p strong {
+    font-size: 30px;
   }
   .wmt-bios-content p {
     font-size: 16px;
