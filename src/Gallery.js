@@ -9,7 +9,7 @@ class Gallery extends Component {
       autoplay: false,
       dots: false,
       nav: true,
-      navText: [`<span><p class="arrow"><img src=${amzData.theme_url}/assets/images/back-top.svg alt='arrow'/></p><p>Previous</p></span>`, `<span><p class="arrow"><img src=${amzData.theme_url}/assets/images/back-top.svg alt='arrow'/></p><p>Next</p></span>`],
+      navText: [`<span><p class="arrow"><img class="on" src=${amzData.theme_url}/assets/images/arrow-prev.svg alt='arrow'/><img class="off" src=${amzData.theme_url}/assets/images/arrow-prev.svg alt='arrow'/></p><p>Previous</p></span>`, `<span><p class="arrow"><img class="on" src=${amzData.theme_url}/assets/images/arrow-next.svg alt='arrow'/><img class="off" src=${amzData.theme_url}/assets/images/arrow-next.svg alt='arrow'/></p><p>Next</p></span>`],
       smartSpeed: 1000,
       navContainer: '#wmt-nav',
     });

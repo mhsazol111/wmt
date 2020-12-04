@@ -1154,7 +1154,7 @@ video::-webkit-media-controls {
 .amz-gallery-item {
   position: relative;
 }
-.amz-gallery-item::before,
+/* .amz-gallery-item::before,
 .amz-gallery-item::after {
   position: absolute;
   content: '';
@@ -1164,7 +1164,7 @@ video::-webkit-media-controls {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .frame-wrap {
   position: absolute;
   width: calc(100% + 35%);
@@ -1179,14 +1179,14 @@ video::-webkit-media-controls {
 .frame-wrap img {
   vertical-align: middle;
 }
-.amz-gallery-item::after {
+/* .amz-gallery-item::after {
   right: 0;
   background-image: url(assets/images/rightslideshadow.png);
 }
 .amz-gallery-item::before {
   left: 0;
   background-image: url(assets/images/leftslideshadow.png);
-}
+} */
 .amz-gallery-slider .owl-nav button {
   position: absolute;
   outline: none;
@@ -1246,6 +1246,7 @@ video::-webkit-media-controls {
   font-weight: 600;
   color: #fff;
   opacity: 0.75;
+  transition: all 0.3s ease-in-out;
 }
 #wmt-nav button p.arrow {
   width: 7.6rem;
@@ -1260,19 +1261,70 @@ video::-webkit-media-controls {
   align-items: center;
   margin-bottom: 15px;
   margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 #wmt-nav button p.arrow img {
-  width: 3rem;
+  width: 7rem;
+  position: relative;
+  margin-top: 5px;
+  margin-top: 0.6rem;
+  transition: all 0.4s ease-in-out;
 }
-#wmt-nav button.owl-next p.arrow img {
+/* #wmt-nav button.owl-next p.arrow img {
   transform: rotate(90deg);
 }
 #wmt-nav button.owl-prev p.arrow img {
   transform: rotate(-90deg);
-}
+} */
 #wmt-nav button.owl-next {
   margin-bottom: 40px;
   margin-bottom: 4.5rem;
+}
+#wmt-nav button p.arrow img.off {
+  position: absolute;
+}
+#wmt-nav button.owl-next p.arrow img.off {
+  transform: translate(-35%, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+#wmt-nav button.owl-next:hover p.arrow img.off {
+  transform: translate(0%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+#wmt-nav button.owl-next:hover p.arrow img.on {
+  opacity: 0;
+  visibility: visible;
+}
+#wmt-nav button.owl-next p.arrow img {
+  margin-left: 7px;
+  margin-left: .6rem;
+}
+#wmt-nav button.owl-prev p.arrow img {
+  margin-right: 7px;
+  margin-right: .6rem;
+}
+#wmt-nav button:hover p.arrow {
+  transform: scale(1.02);
+}
+#wmt-nav button:hover p {
+  opacity: 1;
+}
+#wmt-nav button.owl-prev p.arrow img.off {
+  transform: translate(35%, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+#wmt-nav button.owl-prev:hover p.arrow img.off {
+  transform: translate(0%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+#wmt-nav button.owl-prev:hover p.arrow img.on {
+  opacity: 0;
+  visibility: visible;
 }
 @media only screen and (min-width: 768px) {
   @media (max-aspect-ratio: 4/3) {
@@ -3324,7 +3376,7 @@ h3.faq-title {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: url(assets/images/bios-shadow.png);
+    background: url(assets/images/bios-shadow2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
