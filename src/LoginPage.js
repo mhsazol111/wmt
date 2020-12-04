@@ -20,7 +20,7 @@ class LoginPage extends React.Component {
       isRequesting: false,
       countDown: '00:00:00',
       startInterval: null,
-      eventDate: GATE_OPEN,
+      eventDate: SECOND_OPEN_TIME,
       isLoading: true,
       isGateOpen: false,
       isGateClose: false,
@@ -48,7 +48,7 @@ class LoginPage extends React.Component {
   }
 
   isAlreadyLoggedIn() {
-    let item = localStorage.getItem('__hell_t');
+    let item = localStorage.getItem('__wmt_storage_key');
     return !item ? false : true;
   }
 
@@ -69,7 +69,7 @@ class LoginPage extends React.Component {
       .then((res) => res.json())
       .then((res) => {
         if (res.status) {
-          localStorage.setItem('__hell_t', res.token);
+          localStorage.setItem('__wmt_storage_key', res.token);
           localStorage.setItem('__visitor_', res.visitor);
           this.setState({ isLoggedIn: true, errorMsg: res.message });
         } else {
@@ -161,12 +161,10 @@ class LoginPage extends React.Component {
         />
 
         <div id="main-content">
-
           <div className="wmt-premiere-wrap">
             <div className="container">
               <div className="row">
                 <div className="column-12">
-
                   <div className="coast-area">
                     {/*{!isGateClose ? (
                       <div className="remaining-timer" id="east-cost">
@@ -179,14 +177,14 @@ class LoginPage extends React.Component {
                         <div className="wmt-coast-label">
                           <p>{amzData.first_timer_label}</p>
                         </div> */}
-                      {/*</div>
+                    {/*</div>
                     ) : (
                       ''
                     )} */}
                     {!isGateClose ? (
                       <div className="remaining-timer" id="west-cost">
                         <div className="wmt-premiere-label">
-                          <p>Door open at</p>
+                          <p>Doors open at</p>
                         </div>
                         <div className="west-coast-time">
                           <Countdown timeTillDate={this.state.secondShow} timeFormat="YYYY-MM-DD H:m:s" />
@@ -202,7 +200,6 @@ class LoginPage extends React.Component {
                       ''
                     )}
                   </div>
-
                 </div>
               </div>
             </div>
@@ -211,14 +208,12 @@ class LoginPage extends React.Component {
           <div className="amz-center-section">
             <div className="container">
               <div className="row">
-
                 <div className="column-4">
                   <div className="main-logo-wrap">
                     <img src={themeUrl + '/assets/images/main-logo.svg'} alt="Wild Mountain Thyme" />
                   </div>
                 </div>
-                <div className="column-4">
-                </div>
+                <div className="column-4"></div>
                 <div className="column-4">
                   {isGateOpen && !isGateClose ? (
                     <PasswordForm
@@ -233,7 +228,6 @@ class LoginPage extends React.Component {
                     <GateContent isClosed={isGateOpen} />
                   )}
                 </div>
-
               </div>
             </div>
           </div>

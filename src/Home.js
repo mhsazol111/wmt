@@ -127,7 +127,7 @@ class HomePage extends React.Component {
 
   checkAuth() {
     let xToken = amzData.csrf;
-    let token = localStorage.getItem('__hell_t');
+    let token = localStorage.getItem('__wmt_storage_key');
     if (token) {
       return fetch(AUTH_CHECK, {
         method: 'POST',
@@ -140,15 +140,18 @@ class HomePage extends React.Component {
             this.setState({ isLoading: false });
           } else {
             localStorage.removeItem('__hell_t');
+            localStorage.removeItem('__wmt_storage_key');
             window.location.href = amzData.site_url + '/access';
           }
         })
         .catch((res) => {
           localStorage.removeItem('__hell_t');
+          localStorage.removeItem('__wmt_storage_key');
           window.location.href = amzData.site_url + '/access';
         });
     } else {
       localStorage.removeItem('__hell_t');
+      localStorage.removeItem('__wmt_storage_key');
       window.location.href = amzData.site_url + '/access';
     }
   }

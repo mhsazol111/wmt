@@ -14,7 +14,7 @@ export default class GateContent extends React.Component {
       return (
         <div className="gate_not_opened">
           <h5 className="text-center">
-          Please, have your password ready, <br/>soon you will be able to access the show
+          Please have your password ready. <br/>Soon you will be able to access the show.
           </h5>
         </div>
       );

@@ -217,32 +217,28 @@ template {
 *==============================================*/
 @font-face {
   font-family: 'ITCClearfaceStd';
-  src: url('assets/fonts/ClearfaceStd-Bold.woff2') format('woff2'),
-      url('assets/fonts/ClearfaceStd-Bold.woff') format('woff');
+  src: url('assets/fonts/ClearfaceStd-Bold.woff2') format('woff2'), url('assets/fonts/ClearfaceStd-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'ITCClearfaceStd';
-  src: url('assets/fonts/ClearfaceStd-Regular.woff2') format('woff2'),
-      url('assets/fonts/ClearfaceStd-Regular.woff') format('woff');
+  src: url('assets/fonts/ClearfaceStd-Regular.woff2') format('woff2'), url('assets/fonts/ClearfaceStd-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'ITCClearfaceStd';
-  src: url('assets/fonts/ClearfaceStd-Italic.woff2') format('woff2'),
-      url('assets/fonts/ClearfaceStd-Italic.woff') format('woff');
+  src: url('assets/fonts/ClearfaceStd-Italic.woff2') format('woff2'), url('assets/fonts/ClearfaceStd-Italic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'ITCClearfaceStd';
-  src: url('assets/fonts/ClearfaceStd-Heavy.woff2') format('woff2'),
-      url('assets/fonts/ClearfaceStd-Heavy.woff') format('woff');
+  src: url('assets/fonts/ClearfaceStd-Heavy.woff2') format('woff2'), url('assets/fonts/ClearfaceStd-Heavy.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -307,7 +303,7 @@ body {
 .linePreloader {
   width: 200px;
   height: 4px;
-  background: linear-gradient(to right, #5C8738, #5C8738);
+  background: linear-gradient(to right, #5c8738, #5c8738);
   background-color: #ccc;
   border-radius: 4px;
   background-size: 20%;
@@ -575,7 +571,7 @@ img {
   font-size: 2.8rem;
   line-height: 30px;
   line-height: 1.25;
-  color: #5C8738;
+  color: #5c8738;
   width: auto;
   padding-right: 1rem;
   text-align: left;
@@ -589,7 +585,7 @@ img {
   font-size: 50px;
   font-size: 5.65rem;
   margin: 0;
-  color: #5C8738;
+  color: #5c8738;
   text-transform: capitalize;
   margin-left: -0.6rem;
   text-align: left;
@@ -603,7 +599,7 @@ img {
   font-size: 50px;
   font-size: 5.65rem;
   line-height: 1;
-  color: #5C8738;
+  color: #5c8738;
   text-align: left;
   font-weight: 700;
   margin-right: 10px;
@@ -615,7 +611,7 @@ img {
   font-size: 2.85rem;
   font-weight: 700;
   margin-right: 20px;
-  color: #5C8738;
+  color: #5c8738;
   line-height: 1;
   font-weight: 600;
 }
@@ -624,7 +620,7 @@ img {
   font-size: 25px;
   font-size: 2.85rem;
   margin-right: 20px;
-  color: #5C8738;
+  color: #5c8738;
   line-height: 1;
   font-weight: 500;
 }
@@ -707,8 +703,8 @@ img {
   width: 100%;
   max-width: 280px;
   max-width: 32rem;
-  background-color: #5C8738;
-  border: 2px solid #5C8738;
+  background-color: #5c8738;
+  border: 2px solid #5c8738;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -722,8 +718,8 @@ img {
 }
 .win-os .password-fields-wrapper button,
 .win-os .password-fields-wrapper a {
-    line-height: inherit;
-    padding: 1.02rem 0px;
+  line-height: inherit;
+  padding: 1.02rem 0px;
 }
 /* .password-fields-wrapper a {
   height: 73px;
@@ -738,11 +734,11 @@ img {
   opacity: 1;
   outline: none;
   background-color: transparent;
-  color: #5C8738;
+  color: #5c8738;
 }
 .password-fields-wrapper .input-group p {
   font-size: 2rem;
-  color: #5C8738;
+  color: #5c8738;
 }
 .gate_not_opened {
   position: relative;
@@ -822,7 +818,7 @@ img {
 .hash-tag-logo1 .ls {
   flex-basis: 7%;
   width: 7%;
-  opacity: .75;
+  opacity: 0.75;
 }
 .hash-tag-logo1 .por {
   flex-basis: 21.3%;
@@ -893,7 +889,7 @@ img {
   z-index: 1;
 }
 .amz-bg-layer-image::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 20%;
@@ -942,34 +938,34 @@ img {
   font-size: 5.7rem;
   position: relative;
   transition: all 0.3s ease-in-out;
-/*   overflow: hidden; */
+  /*   overflow: hidden; */
   padding: 0 15px 0 15px;
   line-height: 1;
   margin-bottom: 30px;
   margin-bottom: 3.4rem;
 }
 .amz-nav-items a.active {
-  color: #B8D0A5;
+  color: #b8d0a5;
 }
-.amz-nav-items a:hover:before{
+.amz-nav-items a:hover:before {
   opacity: 1;
-  transform: translate(0,0);
+  transform: translate(0, 0);
   z-index: 9999;
 }
-.amz-nav-items a:before{
+.amz-nav-items a:before {
   content: attr(data-hover);
   position: absolute;
   top: 0;
   left: 15px;
   width: 100%;
   opacity: 0;
-  transform: translate(10%,0);
-  transition: all .3s ease-in-out;
+  transform: translate(10%, 0);
+  transition: all 0.3s ease-in-out;
   line-height: 1;
   font-style: italic;
 }
-.amz-nav-items a div{
-  transition: all .3s ease-in-out;
+.amz-nav-items a div {
+  transition: all 0.3s ease-in-out;
   position: relative;
   opacity: 1;
   visibility: visible;
@@ -977,9 +973,9 @@ img {
   line-height: 1;
   pointer-events: none;
 }
-.amz-nav-items a:hover div{
+.amz-nav-items a:hover div {
   opacity: 0;
-  transform: translate(-10%,0);
+  transform: translate(-10%, 0);
   left: -15px;
   transition: all 0.3s ease-in-out;
 }
@@ -1158,10 +1154,10 @@ video::-webkit-media-controls {
 .amz-gallery-item {
   position: relative;
 }
-.amz-gallery-item::before, 
+.amz-gallery-item::before,
 .amz-gallery-item::after {
   position: absolute;
-  content: "";
+  content: '';
   height: 100%;
   width: 120px;
   top: 0;
@@ -1249,15 +1245,15 @@ video::-webkit-media-controls {
   font-size: 2.3rem;
   font-weight: 600;
   color: #fff;
-  opacity: .75;
+  opacity: 0.75;
 }
 #wmt-nav button p.arrow {
   width: 7.6rem;
   height: 7.6rem;
   border-radius: 50%;
-  border: 1px solid #C2CBAA;
+  border: 1px solid #c2cbaa;
   margin: auto;
-  background-color: rgba(77,43,0);
+  background-color: rgba(77, 43, 0);
   position: relative;
   display: flex;
   justify-content: center;
@@ -1303,6 +1299,14 @@ video::-webkit-media-controls {
   }
   .amz-right-logos .amz-award {
     margin: 0px 5px;
+  }
+  .landing-video-bg .amz-bg::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(225, 225, 225, 0.3);
+    z-index: 1;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1593,7 +1597,7 @@ h3.faq-title {
 }
 .video-bottom-bar::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 110px;
   width: 100%;
   background-image: url(assets/images/video-bar-shadow.png);
@@ -1698,7 +1702,7 @@ h3.faq-title {
   font-weight: 300;
 }
 .amz-bios-details p a {
-  color: #5C8738;
+  color: #5c8738;
 }
 .amz-bios-details p a {
   color: #fff;
@@ -1716,7 +1720,7 @@ h3.faq-title {
   margin-bottom: 1.5rem;
 }
 .amz-back-to-top a span {
-  opacity: .75;
+  opacity: 0.75;
 }
 .amz-back-to-top {
   padding-top: 20rem;
@@ -1742,7 +1746,7 @@ h3.faq-title {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  color: #C2CBAA;
+  color: #c2cbaa;
   z-index: 9;
 }
 .amz-video-wrapper .prescreen-countdown-wrap {
@@ -1808,7 +1812,7 @@ h3.faq-title {
 .fireball-sound-icon h4 {
   font-size: 25px;
   font-size: 2.9rem;
-  color: #C2CBAA;
+  color: #c2cbaa;
   margin: 0;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1986,7 +1990,7 @@ h3.faq-title {
   }
   .home-element-rendered .amz-bg-layer-image,
   .trailer-element-rendered .amz-bg-layer-image,
-  .gallery-element-rendered .amz-bg-layer-image	{
+  .gallery-element-rendered .amz-bg-layer-image {
     background-size: contain;
   }
 }
@@ -2028,7 +2032,7 @@ h3.faq-title {
   }
 }
 @media only screen and (max-width: 1366px) {
-/*   #page-container.faqs-element-rendered #main-header::before,
+  /*   #page-container.faqs-element-rendered #main-header::before,
   #page-container.involved-element-rendered #main-header::before,
   #page-container.bios-element-rendered #main-header::before {
     height: 8vw;
@@ -2228,7 +2232,7 @@ h3.faq-title {
   .mobile-menu span.menu-close::after {
     width: 100%;
     height: 3px;
-    background-color: #5C8738;
+    background-color: #5c8738;
     position: absolute;
     content: '';
     top: 15px;
@@ -2390,20 +2394,20 @@ h3.faq-title {
     width: 100%;
   }
   .amz-center-section .main-logo-wrap {
-      text-align: center;
-      margin-top: 5rem;
+    text-align: center;
+    margin-top: 5rem;
   }
   .amz-center-section .main-logo-wrap img {
-      width: 100%;
-      max-width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
   .remaining-timer#east-cost,
   .remaining-timer#west-cost {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 15px;
-      flex-basis: 50%;
-      width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-basis: 50%;
+    width: 50%;
   }
   .wmt-premiere-label {
     position: absolute;
@@ -2414,32 +2418,32 @@ h3.faq-title {
   .wmt-premiere-label,
   .east-coast-time,
   .west-coast-time {
-      flex-basis: 100%;
-      width: 100%;
-      margin-bottom: 10px;
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 10px;
   }
   .wmt-premiere-label p {
-      margin-right: 0px;
-      text-align: center;
+    margin-right: 0px;
+    text-align: center;
   }
   .remaining-timer .count-down-timer {
-      width: 100%;
-      text-align: center;
-      margin-right: 0px;
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
   }
   .wmt-coast-label {
-      order: 2;
+    order: 2;
   }
   .east-coast-time {
-      flex-basis: 100%;
-      width: 100%;
-      order: 3;
+    flex-basis: 100%;
+    width: 100%;
+    order: 3;
   }
   .west-coast-time {
-      order: 3;
+    order: 3;
   }
   .wmt-coast-label p {
-      margin-right: 0px;
+    margin-right: 0px;
   }
   .wmt-premiere-wrap {
     margin-top: 5rem;
@@ -2586,7 +2590,7 @@ h3.faq-title {
   .password-fields-wrapper form {
     flex-wrap: wrap;
   }
-  .password-fields-wrapper .input-group input{
+  .password-fields-wrapper .input-group input {
     height: 53px !important;
     font-size: 25px !important;
   }
@@ -2713,8 +2717,8 @@ h3.faq-title {
     padding: 1.38rem 0 0.6rem 0;
   }
   .win-os .password-fields-wrapper a {
-	line-height: inherit;
-	padding: 0.50rem 0px;
+    line-height: inherit;
+    padding: 0.5rem 0px;
   }
   .amz-gallery-slider .owl-nav button.owl-prev {
     left: -20px;
@@ -2743,8 +2747,9 @@ h3.faq-title {
   .password-fields-wrapper form .submit-wrap {
     margin-right: auto;
   }
-  #main-header .header-sound-toggle p .active, #main-header .header-sound-toggle p .clickable:hover {
-    color: #5C8738;
+  #main-header .header-sound-toggle p .active,
+  #main-header .header-sound-toggle p .clickable:hover {
+    color: #5c8738;
   }
   #main-header .header-sound-toggle p #hs-toggle-img img.black {
     display: block;
@@ -2759,7 +2764,7 @@ h3.faq-title {
     position: absolute;
   }
   .gallery-element-rendered .premiere-date-wrap {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2771,8 +2776,8 @@ h3.faq-title {
     margin-bottom: 20px;
   }
   .frame-wrap {
-	top: -20%;
-	height: 112%;
+    top: -20%;
+    height: 112%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -2835,8 +2840,8 @@ h3.faq-title {
     margin-bottom: 12px;
   }
   .frame-wrap {
-	height: 112%;
-	top: -23%;
+    height: 112%;
+    top: -23%;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -2849,7 +2854,8 @@ h3.faq-title {
   .coast-area {
     padding-top: 0px;
   }
-  .remaining-timer#east-cost, .remaining-timer#west-cost {
+  .remaining-timer#east-cost,
+  .remaining-timer#west-cost {
     flex-basis: 100%;
     width: 100%;
   }
@@ -2859,10 +2865,10 @@ h3.faq-title {
     top: 0;
   }
   .gallery-element-rendered .premiere-date-wrap {
-	margin-bottom: 35px;
+    margin-bottom: 35px;
   }
   .frame-wrap {
-	height: 108%;
+    height: 108%;
   }
 }
 @media only screen and (max-width: 374px) {
@@ -2870,7 +2876,7 @@ h3.faq-title {
     font-size: 14px;
   }
   .frame-wrap {
-	height: 103%;
+    height: 103%;
   }
 }
 .amz-gii-name h2,
@@ -2916,11 +2922,11 @@ h3.faq-title {
     display: flex;
     justify-content: center;
   }
-/*   .amz-bg-layer-image {
+  /*   .amz-bg-layer-image {
     background-position: 100% 57%;
   } */
   .home-element-rendered .amz-bg-layer-image,
-  .trailer-element-rendered .amz-bg-layer-image{
+  .trailer-element-rendered .amz-bg-layer-image {
     background-image: url(assets/images/TheaterEmpty_WMT.jpg) !important;
     background-position: top center;
   }
@@ -3202,11 +3208,11 @@ h3.faq-title {
     bottom: 12%;
     transform: translateY(10%);
   }
-	/*media all*/
+  /*media all*/
   .gate-is-open-now .amz-center-section .row {
     flex-wrap: nowrap;
   }
-	/*media all*/
+  /*media all*/
   .frame-wrap {
     position: absolute;
     width: 147rem;
@@ -3215,8 +3221,6 @@ h3.faq-title {
     display: inline;
     height: 152%;
   }
-
-
 }
 
 @media (max-width: 767px) and (-ms-high-contrast: none), (max-width: 767px) and (-ms-high-contrast: active) {
@@ -3244,7 +3248,7 @@ h3.faq-title {
   align-items: center;
   width: 100%;
   max-width: 1287px;
-  max-width: 147rem;
+  max-width: 135rem;
 }
 .wmt-biography-wrap .wmt-bios-item:nth-child(odd) {
   flex-direction: row-reverse;
@@ -3289,7 +3293,7 @@ h3.faq-title {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
-  opacity: .75;
+  opacity: 0.75;
 }
 @media only screen and (min-width: 768px) {
   /* #page-container.bios-element-rendered #main-content {
@@ -3314,7 +3318,7 @@ h3.faq-title {
     height: 100vh;
   }
   #page-container.bios-element-rendered #main-content::before {
-    content: "";
+    content: '';
     position: fixed;
     width: 100%;
     height: 100%;

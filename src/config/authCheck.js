@@ -2,7 +2,7 @@ import { AUTH_CHECK } from './endpoints';
 
 const checkAuth = () => {
     let xToken = amzData.csrf;
-    let token = localStorage.getItem('__hell_t');
+    let token = localStorage.getItem('__wmt_storage_key');
     if( token ) {
         return fetch(AUTH_CHECK, {
             method: 'POST',
@@ -13,12 +13,14 @@ const checkAuth = () => {
         .then( res => {
             if( ! res.status ) {
                 localStorage.removeItem('__hell_t');
+                localStorage.removeItem('__wmt_storage_key');
                 localStorage.removeItem('__visitor_');
             }
             return res.status;
         })
         .catch( res => {
             localStorage.removeItem('__hell_t');
+            localStorage.removeItem('__wmt_storage_key');
             localStorage.removeItem('__visitor_');
             return false;
         });

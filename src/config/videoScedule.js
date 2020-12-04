@@ -2,10 +2,10 @@ export const GATE_OPEN = amzData.gate_open_time; // UTC time
 // export const GATE_OPEN = new Date(Date.UTC(2020, 10, 19, 0, 30)).getTime(); // UTC time
 // new Date(Date.UTC(2020, 8, 10, 8)).getTime(); // UTC time
 
-export const gate_should_open = () => {
-    let current_time = new Date().getTime();
-    return GATE_OPEN < current_time;
-}
+// export const gate_should_open = () => {
+//     let current_time = new Date().getTime();
+//     return GATE_OPEN < current_time;
+// }
 
 export const VIDEO_START_TIME = amzData.movie_start;// new Date(amzData.movie_start).getTime(); // from backend
 // export const VIDEO_START_TIME = new Date(Date.UTC(2020, 10, 19, 0, 30)).getTime(); // UTC time
@@ -26,6 +26,11 @@ export const seekTime = () => {
 export const SECOND_OPEN_TIME = amzData.second_show_gate_open; // UTC time
 // export const SECOND_OPEN_TIME = new Date(Date.UTC(2020, 10, 19, 3, 30)).getTime(); // UTC time
 // new Date(Date.UTC(2020, 8, 11, 2)).getTime(); // UTC time
+
+export const gate_should_open = () => {
+    let current_time = new Date().getTime();
+    return SECOND_OPEN_TIME < current_time;
+}
 
 export const SECOND_SHOW_TIME = amzData.second_movie_start_time; // UTC time
 // export const SECOND_SHOW_TIME = new Date(Date.UTC(2020, 10, 19, 3, 30)).getTime(); // UTC time

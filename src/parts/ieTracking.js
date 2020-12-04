@@ -4,7 +4,7 @@ export const TRACK_INTERVAL = 180000; // 3 mins
 
 // Get Login token
 export const get_login_token = () => {
-    let token = localStorage.getItem('__hell_t');
+    let token = localStorage.getItem('__wmt_storage_key');
     return token || false;
 }
 
