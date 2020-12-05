@@ -37,10 +37,13 @@ class Gallery extends Component {
               <img src={`${themeUrl}/assets/images/gallery/Gallery-3.jpg`} alt="gallery3" />
             </div>
             <div className="amz-gallery-item">
-              <img src={`${themeUrl}/assets/images/gallery/Gallery-4.jpg`} alt="gallery3" />
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-4.jpg`} alt="gallery4" />
             </div>
             <div className="amz-gallery-item">
-              <img src={`${themeUrl}/assets/images/gallery/Gallery-5.jpg`} alt="gallery3" />
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-5.jpg`} alt="gallery5" />
+            </div>
+            <div className="amz-gallery-item">
+              <img src={`${themeUrl}/assets/images/gallery/Gallery-6.jpg`} alt="gallery6" />
             </div>
           </div>
           <div id="wmt-nav" className="owl-nav"></div>

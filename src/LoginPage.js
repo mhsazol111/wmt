@@ -20,7 +20,7 @@ class LoginPage extends React.Component {
       isRequesting: false,
       countDown: '00:00:00',
       startInterval: null,
-      eventDate: SECOND_OPEN_TIME,
+      eventDate: GATE_OPEN,
       isLoading: true,
       isGateOpen: false,
       isGateClose: false,
@@ -166,35 +166,32 @@ class LoginPage extends React.Component {
               <div className="row">
                 <div className="column-12">
                   <div className="coast-area">
-                    {/*{!isGateClose ? (
+                    {!isGateClose ? (
                       <div className="remaining-timer" id="east-cost">
                         <div className="wmt-premiere-label">
                           <p>Door open at</p>
                         </div>
-                        {/* <div className="east-coast-time">
+                        <div className="east-coast-time">
                           <Countdown timeTillDate={this.state.firstShow} timeFormat="YYYY-MM-DD H:m:s" />
                         </div>
                         <div className="wmt-coast-label">
                           <p>{amzData.first_timer_label}</p>
-                        </div> */}
-                    {/*</div>
+                        </div>
+                      </div>
                     ) : (
                       ''
-                    )} */}
+                    )}
                     {!isGateClose ? (
                       <div className="remaining-timer" id="west-cost">
-                        <div className="wmt-premiere-label">
-                          <p>Doors open at</p>
-                        </div>
                         <div className="west-coast-time">
                           <Countdown timeTillDate={this.state.secondShow} timeFormat="YYYY-MM-DD H:m:s" />
                         </div>
                         <div style={{ display: 'none' }}>
                           <Countdown timeTillDate={this.state.eventDate} timeFormat="YYYY-MM-DD H:m:s" onFinished={this.timerCompleted} />
                         </div>
-                        {/* <div className="wmt-coast-label">
+                        <div className="wmt-coast-label">
                           <p>{amzData.second_timer_label}</p>
-                        </div> */}
+                        </div>
                       </div>
                     ) : (
                       ''
