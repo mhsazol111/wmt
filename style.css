@@ -16,6 +16,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -1153,6 +1154,7 @@ video::-webkit-media-controls {
 }
 .amz-gallery-item {
   position: relative;
+  margin-left: 1px;
 }
 /* .amz-gallery-item::before,
 .amz-gallery-item::after {
@@ -1178,6 +1180,7 @@ video::-webkit-media-controls {
 }
 .frame-wrap img {
   vertical-align: middle;
+  width: 100%;
 }
 /* .amz-gallery-item::after {
   right: 0;
@@ -1300,11 +1303,11 @@ video::-webkit-media-controls {
 }
 #wmt-nav button.owl-next p.arrow img {
   margin-left: 7px;
-  margin-left: .6rem;
+  margin-left: 0.6rem;
 }
 #wmt-nav button.owl-prev p.arrow img {
   margin-right: 7px;
-  margin-right: .6rem;
+  margin-right: 0.6rem;
 }
 /* #wmt-nav button:hover p.arrow {
   transform: scale(1.02);
@@ -1393,13 +1396,13 @@ video::-webkit-media-controls {
     width: 40px;
     margin-top: 3px !important;
   }
-	#wmt-nav button.owl-next p.arrow img {
+  #wmt-nav button.owl-next p.arrow img {
     margin-left: 4px !important;
-	}
-	#wmt-nav button.owl-prev p.arrow img {
-		margin-right: 4px !important;
-	}
-/* 	#wmt-nav button p.arrow img.off {
+  }
+  #wmt-nav button.owl-prev p.arrow img {
+    margin-right: 4px !important;
+  }
+  /* 	#wmt-nav button p.arrow img.off {
 		top: 11px;
 	}
 	#wmt-nav button p.arrow img.on {
@@ -3360,6 +3363,20 @@ h3.faq-title {
   margin-right: auto;
   opacity: 0.75;
 }
+.bios-scroll-down {
+  padding-top: 120px;
+  padding-top: 13rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.bios-scroll-down span {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: -1rem;
+  color: #fff;
+  opacity: .75;
+}
 @media only screen and (min-width: 768px) {
   /* #page-container.bios-element-rendered #main-content {
     position: absolute;
@@ -3440,6 +3457,9 @@ h3.faq-title {
   }
   .wmt-biography-bottom p {
     font-size: 14px;
+  }
+  .bios-scroll-down {
+    display: none;
   }
 }
 /* Bios CSS */
